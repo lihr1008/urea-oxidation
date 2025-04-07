@@ -20,38 +20,33 @@ y = pd.read_excel(excel, sheet_name='overpotential')
 x_train, x_val, y_train, y_val = train_test_split(x, y, test_size=0.2, random_state=106)
 
 norm_x = StandardScaler().fit(x_train)
-norm_y = StandardScaler().fit(y_train)#归一化y_train的数据并得其一般属性（均值，方差，最大值，最小值）
-x_train_ = norm_x.transform(x_train)#进行x_train的归一化
-x_val_ = norm_x.transform(x_val)#进行x_val的归一化
+norm_y = StandardScaler().fit(y_train)
+x_train_ = norm_x.transform(x_train)
+x_val_ = norm_x.transform(x_val)
 
-y_train_ = norm_y.transform(y_train)#进行y_train的归一化
-y_val_ = norm_y.transform(y_val)#进行y_val的归一化
+y_train_ = norm_y.transform(y_train)
+y_val_ = norm_y.transform(y_val)
 
-
-# 定义GetLoader类，继承Dataset方法，并重写__getitem__()和__len__()方法
 class GetLoader(Dataset):
-    # 初始化函数，得到数据
     def __init__(self, data_root, data_label):
         self.data = data_root
         self.label = data_label
-    # index是根据batchsize划分数据后得到的索引，最后将data和对应的labels进行一起返回
     def __getitem__(self, index):
         datas = self.data[index]
         labels = self.label[index]
         return (datas, labels)
-    # 该函数返回数据大小长度，目的是DataLoader方便划分，如果不知道大小，DataLoader会一脸懵逼
     def __len__(self):
         return len(self.data)
 
 
-x_train_=torch.Tensor(x_train_) #转为float32类型
+x_train_=torch.Tensor(x_train_)
 x_val_=torch.Tensor(x_val_)
 train_pred_ = premodel.forward(x_train_)
 val_pred_ = premodel.forward(x_val_)
 
-trainDataset = GetLoader(train_pred_,y_train_) #中间值，km
+trainDataset = GetLoader(train_pred_,y_train_)
 testDataset = GetLoader(val_pred_,y_val_)
-# 训练数据和测试数据的装载
+
 train_loader = DataLoader(
     trainDataset,
     batch_size=8,
@@ -163,7 +158,7 @@ for i in range(y.shape[1]):
         axes[j].tick_params(labelsize=25)
         axes[j].set_ylim(lim)
 
-    axes[0].scatter(y_train.iloc[:, i], train_pred[:, i], s=10)#散点图
+    axes[0].scatter(y_train.iloc[:, i], train_pred[:, i], s=10)
     axes[1].scatter(y_val.iloc[:, i], val_pred[:, i], s=10)
 
     axes[0].text(y_max, y_min, f'r={train_corr:.3f}', horizontalalignment='right', fontsize=40)
