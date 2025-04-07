@@ -11,19 +11,13 @@ class EarlyStopping:
 
             patience (int): How long to wait after last time validation loss improved.
 
-                            上次验证集损失值改善后等待几个epoch
-
                             Default: 7
 
             verbose (bool): If True, prints a message for each validation loss improvement.
 
-                            如果是True，为每个验证集损失值改善打印一条信息
-
                             Default: False
 
             delta (float): Minimum change in the monitored quantity to qualify as an improvement.
-
-                            监测数量的最小变化，以符合改进的要求
 
                             Default: 0
 
@@ -85,7 +79,6 @@ class EarlyStopping:
 
         Saves model when validation loss decrease.
 
-        验证损失减少时保存模型。
 
         '''
 
@@ -93,8 +86,8 @@ class EarlyStopping:
 
             print(f'Validation loss decreased ({self.val_loss_min:.6f} --> {val_loss:.6f}).  Saving model ...')
 
-        torch.save(model.state_dict(), 'checkpoint.pth') # 这里会存储迄今最优模型的参数
+        torch.save(model.state_dict(), 'checkpoint.pth') 
 
-        # torch.save(model, 'finish_model.pkl') # 这里会存储迄今最优的模型
+        # torch.save(model, 'finish_model.pkl')
 
         self.val_loss_min = val_loss
