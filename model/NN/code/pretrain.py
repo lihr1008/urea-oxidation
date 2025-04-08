@@ -79,18 +79,15 @@ epochs = 500
 for epoch in range(epochs):
     temp_loss = []
     for batch_idx,train_data in enumerate(train_loader):
-        # premodel.train()
         (data, label) = train_data
         data=data.to(torch.float32)
         label = label.to(torch.float32)
         logits = premodel(data)
-        #logits = model.train(data)
         loss = criteon(logits,label)
         temp_loss.append(loss.data)
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
-        #scheduler.step(loss)
     temp_loss = np.array(temp_loss)
     train_loss = np.average(temp_loss)
     print('Train Epoch : {}\tLoss:{}'.format(
@@ -123,10 +120,6 @@ for epoch in range(epochs):
     if early_stopping.early_stop:
         print("Early stopping")
         break
-
-
-print("完成")
-
 
 x_train_ = torch.tensor(x_train_).to(torch.float32)
 x_val_= torch.tensor(x_val_).to(torch.float32)
