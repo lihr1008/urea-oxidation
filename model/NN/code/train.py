@@ -83,12 +83,9 @@ epochs=300
 for epoch in range(epochs):
     temp_loss = []
     for batch_idx,train_data in enumerate(train_loader):
-        # model.train()
         (data, label) = train_data
-        # data=data.to(torch.float32)
         label = label.to(torch.float32)
         logits = model(data)
-        #logits = model.train(data)
         loss = criteon(logits,label)
         temp_loss.append(loss.data)
         optimizer.zero_grad()
@@ -122,9 +119,6 @@ for epoch in range(epochs):
 
     print('\nTest epoch:{}, Average loss: {}\n'.format(
         epoch,val_loss))
-
-
-print("完成")
 
 train_pred = model.forward(train_pred_)
 #train_pred = model.train(train_pred_)
