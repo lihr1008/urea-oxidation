@@ -26,4 +26,6 @@ do
 	rm *.pdb.*
 
 	python pdb2cif.py box.pdb box.cif
+	mkdir $line
+	mv box.cif $line
 done
