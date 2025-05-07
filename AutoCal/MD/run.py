@@ -59,7 +59,7 @@ class Parameters:
 cif_path = Path('box.cif').resolve()
 run_dir = Path(f"lammps_run_{cif_path.stem}").resolve()
 run_dir.mkdir(parents=True, exist_ok=True)
-# 复制CIF文件到运行目录
+
 target_cif = run_dir / cif_path.name
 if not target_cif.exists():
     shutil.copy(cif_path, target_cif)
