@@ -81,7 +81,7 @@ if par.output_cif:
 
 sim.write_lammps_files(wd=run_dir)
 
-with open(run_dir/f"in.lammps", 'a') as f:
+with open(run_dir/f"in.box", 'a') as f:
     f.write("""
 neighbor        2.0 bin
 neigh_modify    delay 5
@@ -107,7 +107,7 @@ run            1000000
     """)
 
 import subprocess
-lammps_cmd = "mpirun -np 64 lmp_cpu -in in.lammps"
+lammps_cmd = "mpirun -np 64 lmp_cpu -in in.box"
 
 print(f"Running LAMMPS in: {run_dir}")
 result = subprocess.run(
@@ -124,4 +124,3 @@ print(result.stdout)
 
 print("=== LAMMPS stderr ===")
 print(result.stderr)
-
