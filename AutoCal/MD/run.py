@@ -1,5 +1,4 @@
 #An example of running MD 
-from pymatgen.core import Structure
 from pymatgen.io.cif import CifParser
 from lammps_interface.lammps_main import LammpsSimulation
 from lammps_interface.structure_data import from_CIF, write_CIF
