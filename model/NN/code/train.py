@@ -161,7 +161,7 @@ for i in range(y.shape[1]):
     axes[0].set_ylabel(y.columns[i], fontsize=35)
 
 plt.savefig(f'../results/train.png')
-torch.save(model, '../results/PBA-ml-train_model.pkl')
+torch.save(model, '../results/PBA-ml-train_model.pth')
 
 class FullModel(nn.Module):
     def __init__(self, premodel, formal_model):
@@ -175,11 +175,11 @@ class FullModel(nn.Module):
 full_model = FullModel(premodel, model)
 
 #保存
-f = open('../results/train_norm_y.pckl', 'wb')
+f = open('../results/train_norm_y.pkl', 'wb')
 pickle.dump(norm_y, f)
 f.close()
 
-f = open('../results/train_norm_x.pckl', 'wb')
+f = open('../results/train_norm_x.pkl', 'wb')
 pickle.dump(norm_x, f)
 f.close()
 
