@@ -186,18 +186,6 @@ f = open('../results/train_norm_x.pckl', 'wb')
 pickle.dump(norm_x, f)
 f.close()
 
-trian_pred=train_pred.tolist()
-val_pred=val_pred.tolist()
-
-train_pred=pd.DataFrame(train_pred,columns=['overpotential'])
-val_pred=pd.DataFrame(val_pred,columns=['overpotential'])
-with pd.ExcelWriter(f'../results/train_result_all.xlsx') as writer:
-    y_train.to_excel(writer, sheet_name='y_train', index=False)
-    train_pred.to_excel(writer, sheet_name='train_pred', index=False)
-    y_val.to_excel(writer, sheet_name='y_val', index=False)
-    val_pred.to_excel(writer, sheet_name='val_pred', index=False)
-
-
 import shap
 def combined_model(x_np):
     x_norm = norm_x.transform(x_np)
