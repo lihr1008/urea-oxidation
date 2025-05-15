@@ -161,9 +161,7 @@ for i in range(y.shape[1]):
     axes[0].set_ylabel(y.columns[i], fontsize=35)
 
 plt.savefig(f'../results/train.png')
-
 torch.save(model, '../results/PBA-ml-train_model.pkl')
-
 
 class FullModel(nn.Module):
     def __init__(self, premodel, formal_model):
@@ -175,7 +173,6 @@ class FullModel(nn.Module):
         return self.formal_model(x)
 
 full_model = FullModel(premodel, model)
-torch.save(full_model, '../results/full_model.pkl')
 
 #保存
 f = open('../results/train_norm_y.pckl', 'wb')
@@ -219,5 +216,3 @@ df_input = pd.DataFrame(x_explain, columns=x.columns)
 df_shap = pd.DataFrame(shap_values_2d, columns=["shap_" + col for col in x.columns])
 df_combined = pd.concat([df_input, df_shap], axis=1)
 df_combined.to_excel("../results/shap_data.xlsx", index=False)
-
-
