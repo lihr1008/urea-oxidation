@@ -1,0 +1,15 @@
+cuspy
+rdkit
+pyecharts
+fastode
+ChemNLPy
+tqdm
+gensim
+scikit-learn
+matplotlib
+numpy
+pandas
+xlsxwriter
+selenium
+networkx
+#pygraphviz
