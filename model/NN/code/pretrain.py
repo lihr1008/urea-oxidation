@@ -167,4 +167,13 @@ plt.show()
 
 torch.save(premodel, '../results/PBA-ml-pretrain_model.pkl')
 
+trian_pred=train_pred.tolist()
+val_pred=val_pred.tolist()
 
+train_pred=pd.DataFrame(train_pred,columns=['ade_urea','ade_CO','e_urea','e_CO'])
+val_pred=pd.DataFrame(val_pred,columns=['ade_urea','ade_CO','e_urea','e_CO'])
+with pd.ExcelWriter(f'pretrain_result_all.xlsx') as writer:
+    y_train.to_excel(writer, sheet_name='y_train', index=False)
+    train_pred.to_excel(writer, sheet_name='train_pred', index=False)
+    y_val.to_excel(writer, sheet_name='y_val', index=False)
+    val_pred.to_excel(writer, sheet_name='val_pred', index=False)
