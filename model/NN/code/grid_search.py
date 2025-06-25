@@ -22,9 +22,6 @@ class Model(Module):
 
         return x
 
-model = torch.load('PBA-ml-pretrain_model.pkl')
-state_dict = model.state_dict()
-torch.save(state_dict, 'PBA-ml-pretrain_model_weights.pth')
 premodel = Model()
 premodel.load_state_dict(torch.load('PBA-ml-pretrain_model_weights.pth'))
 premodel.eval()
@@ -46,10 +43,8 @@ class Model(Module):
 
         return x
 
-trained_model = torch.load('PBA-ml-train_model.pth')
-state_dict = trained_model.state_dict()
+
 model = Model()
-torch.save(state_dict, 'train_model_weights.pth')
 model.load_state_dict(torch.load('train_model_weights.pth'))
 model.eval()
 
