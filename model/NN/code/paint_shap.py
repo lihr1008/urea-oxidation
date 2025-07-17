@@ -20,19 +20,16 @@ shap.summary_plot(
 
 fig = plt.gcf()  
 axes = fig.axes  
-
 ax_main = axes[0]
-# x轴标签（SHAP value (impact on model output)）
 ax_main.set_xlabel(
     ax_main.get_xlabel(),
     fontweight='bold',
     fontsize=12 
 )
-# y轴特征名称（Mn、Co、Zn等）
+
 for tick in ax_main.get_yticklabels():
     tick.set_fontweight('bold')
     tick.set_fontsize(12)  
-
 
 for tick in ax_main.get_xticklabels():
     tick.set_fontweight('bold')
