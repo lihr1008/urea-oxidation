@@ -3,7 +3,7 @@ Description of folders:
 1. Deepsearcher  
 DeepSearcher combines cutting-edge LLMs and Vector Databases to perform search, evaluation, and reasoning based on private data, providing highly accurate answer and comprehensive report.  
 `query_select.py`: We called the Deepseek-R1 model and Milvus vector database in Deepsearcher and selected the combinations of elements that met many of the requirements based on the abstracts of the relevant literature in the last ten years retrieved from Web of Science with the keywords of urea oxidation and prussian blue analogues, respectively.  
-`query_syn.py`: We similarly invoked the Deepseek-R1 model and Milvus vector database in Deepsearcher to recommend synthetic routes based on more than 80 downloaded literatures related to prussian blue analogues.
+`query_syn.py`: We similarly invoked the Deepseek-R1 model and Milvus vector database in Deepsearcher to recommend synthetic routes based on 93 downloaded literatures related to prussian blue analogues.
 2. NLP    
 The text is processed through the natural language processing model to extract metal elements and the correlation between metal elements. For specific operations, see the readme.md document in the file directory.  
 Chemical entities and their functions can be extracted from the abstract. The abstracts can be downloaded via web of science.  
