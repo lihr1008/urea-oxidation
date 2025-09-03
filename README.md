@@ -6,7 +6,7 @@ query_select.py: We called the Deepseek-R1 model and Milvus vector database in D
 query_syn.py: We similarly invoked the Deepseek-R1 model and Milvus vector database in Deepsearcher to recommend synthetic routes based on more than 80 downloaded literatures related to prussian blue analogues.
 2. NLP    
 The text is processed through the natural language processing model to extract metal elements and the correlation between metal elements. For specific operations, see the readme.md document in the file directory.  
-Chemical entities and their functions can be extracted from the abstract. The abstracts can be downloaded via webofscience.  
+Chemical entities and their functions can be extracted from the abstract. The abstracts can be downloaded via web of science.  
 PBA_data: The search content in Web of Science is the literature related to Prussian blue analogues published between 2015 and 2024.  
 UOR_data: The search content in Web of Science is the literature related to urea oxidation published between 2015 and 2024.
 3. AutoCal    
