@@ -2,46 +2,51 @@ import os
 from typing import Dict, List
 
 from deepsearcher.llm.base import BaseLLM, ChatResponse
-import httpx
 
-class OpenAI(BaseLLM):
+
+class Aliyun(BaseLLM):
     """
-    OpenAI language model implementation.
+    Aliyun language model implementation.
 
-    This class provides an interface to interact with OpenAI's language models
-    through their API.
+    This class provides an interface to interact with language models
+    hosted on the Aliyun platform.
+
+    API Documentation: https://bailian.console.aliyun.com/?tab=api#/api
 
     Attributes:
-        model (str): The OpenAI model identifier to use.
-        client: The OpenAI client instance.
+        model (str): The model identifier to use on Aliyun platform.
+        client: The OpenAI-compatible client instance for Aliyun API.
     """
 
-    def __init__(self, model: str = "o1-mini", **kwargs):
+    def __init__(self, model: str = "deepseek-r1", **kwargs):
         """
-        Initialize an OpenAI language model client.
+        Initialize an Aliyun language model client.
 
         Args:
-            model (str, optional): The model identifier to use. Defaults to "o1-mini".
+            model (str, optional): The model identifier to use. Defaults to "deepseek-r1".
             **kwargs: Additional keyword arguments to pass to the OpenAI client.
-                - api_key: OpenAI API key. If not provided, uses OPENAI_API_KEY environment variable.
-                - base_url: OpenAI API base URL. If not provided, uses OPENAI_BASE_URL environment variable.
+                - api_key: Aliyun bailian API key. If not provided, uses DASHSCOPE_API_KEY environment variable.
+                - base_url: Aliyun bailian API base URL. If not provided, defaults to "https://dashscope.aliyuncs.com/compatible-mode/v1".
         """
         from openai import OpenAI as OpenAI_
 
         self.model = model
+
         if "api_key" in kwargs:
             api_key = kwargs.pop("api_key")
         else:
-            api_key = os.getenv("OPENAI_API_KEY")
+            api_key = os.getenv("DASHSCOPE_API_KEY")
+
         if "base_url" in kwargs:
             base_url = kwargs.pop("base_url")
         else:
-            base_url = os.getenv("OPENAI_BASE_URL")
+            base_url = "https://dashscope.aliyuncs.com/compatible-mode/v1"
+
         self.client = OpenAI_(api_key=api_key, base_url=base_url, **kwargs)
 
     def chat(self, messages: List[Dict]) -> ChatResponse:
         """
-        Send a chat message to the OpenAI model and get a response.
+        Send a chat message to the Aliyun model and get a response.
 
         Args:
             messages (List[Dict]): A list of message dictionaries, typically in the format
