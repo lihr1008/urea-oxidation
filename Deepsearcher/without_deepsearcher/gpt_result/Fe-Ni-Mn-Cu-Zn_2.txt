@@ -1,0 +1,66 @@
+Proposed high-entropy Prussian blue analog (HE-PBA) for alkaline urea oxidation: a mixed-cation hexacyanoferrate with the general composition M2+ (Ni–Cu–Mn–Fe–Zn, near-equimolar) coordinated to [FeIII(CN)6]3−, commonly written as (Ni0.2Cu0.2Mn0.2Fe0.2Zn0.2)3[FeIII(CN)6]2·nH2O. This design mixes five inexpensive, widely available, environmentally benign transition metals on the divalent M site while retaining Fe on the [Fe(CN)6] framework site, maximizing configurational entropy and the “cocktail effect.”
+
+Rationale for choosing each metal
+
+1) Nickel (Ni2+)
+- Catalytic activity: Ni is the workhorse for the alkaline urea oxidation reaction (UOR). In alkaline media, surface Ni2+ readily oxidizes to Ni3+ (γ-NiOOH/NiOOH-like phases), which serve as the principal active sites for dehydrogenation and C–N bond activation in urea. Ni lowers UOR onset potential and provides high intrinsic activity.
+- Stability: In a high-entropy lattice, neighboring cations modulate Ni’s electronic environment, suppressing over-oxidation and dissolution. The CN-bridged framework mechanically supports repeated Ni2+/Ni3+ cycling.
+- Synthetic feasibility: Ni2+ salts (chloride/nitrate) co-precipitate cleanly with [Fe(CN)6]3− at room temperature, yielding well-formed PBA nanocubes or nanoparticles.
+- Cost-effectiveness: Ni is abundant and low cost compared to noble metals or Ru/Ir-based OER catalysts.
+- Structural features: Ni2+ coordinated to CN (typically Ni–N end) experiences a strong ligand field that tunes Ni eg occupancy toward the optimal range for OH− adsorption/desorption, improving UOR kinetics. Under operation, surface reconstruction yields multi-metal (oxy)hydroxides anchored by a robust CN-linked core.
+
+2) Iron (Fe)
+- Role in framework: Fe is present as [FeIII(CN)6]3−, the canonical building block for PBAs, providing a rigid, open cubic framework with high ionic/electronic transport through mixed-valence FeII/FeIII pathways (intervalence charge transfer).
+- Catalytic activity: Even if Fe is primarily in the anionic sublattice, Fe promotes charge transport and can participate in redox mediation. The well-known Ni–Fe synergy (in layered double hydroxides and PBAs) lowers the barrier for Ni oxidation to NiOOH, thereby enhancing UOR turnover.
+- Stability: The strong Fe–C≡N bonds and the hexacyanoferrate network resist corrosion, retaining crystallinity while allowing surface reconstruction to active (oxy)hydroxides. Fe is environmentally benign compared to metals such as Cr (potential Cr(VI) issues).
+- Synthetic feasibility: K3[Fe(CN)6] is cheap, water-soluble, and yields crystalline PBAs in a simple, scalable co-precipitation.
+- Cost-effectiveness: Fe is among the lowest-cost transition metals; it also improves conductivity, reducing the need for expensive conductive additives.
+- Structural features: The framework porosity (vacancies of [Fe(CN)6] units and interstitial water) creates ion-accessible channels for OH− and urea, essential for fast transport during UOR.
+
+3) Copper (Cu2+)
+- Catalytic activity: Cu co-catalyzes UOR and is known to reduce onset potentials for amine oxidation. In a Ni-rich environment, Cu adjusts the local d-band center, improves electron transport, and increases the density of active NiOOH at lower potentials.
+- Stability: Although Cu2+ can undergo Jahn–Teller distortion, in a high-entropy PBA this controlled distortion introduces microstrain that strengthens adsorption at certain sites without causing catastrophic lattice collapse. Multi-cation mixing also reduces Cu dissolution in alkaline.
+- Synthetic feasibility: Cu2+ readily forms PBAs (Cu–Fe hexacyanoferrates) with clean morphologies and can be co-loaded by simple aqueous co-precipitation.
+- Cost-effectiveness: Cu is inexpensive and abundant, avoiding high-cost noble metals.
+- Structural features: Cu’s local distortions and higher polarizability improve electronic conductivity and broaden the distribution of adsorption energies across active sites, helping approach Sabatier-like optimal binding for urea and OH− on a subset of sites.
+
+4) Manganese (Mn2+)
+- Catalytic activity: Mn offers multi-valent chemistry (Mn2+/Mn3+/Mn4+) beneficial for oxygen/oxide chemistry, increasing OH− affinity and assisting in electron transfer during UOR. It often enhances the durability and can contribute to activity in multi-metal hydroxides at slightly higher potentials.
+- Stability: Mn helps buffer redox volume changes, and Mn-containing (oxy)hydroxides can form protective, self-limiting layers that reduce anodic corrosion. In high-entropy lattices, Mn’s relatively larger ionic radius creates defect sites that increase accessible porosity without destabilizing the framework.
+- Synthetic feasibility: Mn2+ co-precipitates smoothly with [Fe(CN)6]3− and integrates well into the PBA lattice at room temperature.
+- Cost-effectiveness: Mn is cheap and widely available.
+- Structural features: Mn2+ tuning of lattice parameters and vacancy density increases ion transport and exposes more catalytically accessible surfaces; high-spin Mn in CN coordination modifies the ligand-field environment of nearby Ni/Cu, fine-tuning OH− binding energies.
+
+5) Zinc (Zn2+) — the “tentative introduction” for environmental benignity and valence stability
+- Rationale for inclusion: Zn2+ has a single, stable oxidation state in alkaline media, is non-toxic and abundant, and is widely used for corrosion resistance. Including Zn meets the stated aim to avoid metals with higher costs or environmental concerns while optimizing overall performance.
+- Catalytic activity: Zn is largely redox-inert under UOR conditions, but as a structural diluent it modulates the electronic environment of neighboring redox-active metals (Ni, Cu, Mn). This can stabilize Ni3+ formation at lower potentials and prevent over-oxidation of Cu/Mn, indirectly boosting durability and apparent activity.
+- Stability: Zn improves corrosion resistance by promoting benign hydroxide passivation layers and reducing cation migration. In a high-entropy lattice, Zn’s presence decreases the tendency for any one species to segregate or dissolve.
+- Synthetic feasibility: Zn2+ is straightforward to incorporate via co-precipitation, forming uniform particles without requiring special ligands or solvents.
+- Cost-effectiveness: Zn is low cost and widely available, enabling large-scale, low-cost synthesis.
+- Structural features: Zn’s preference for N coordination with CN and its moderate ionic radius help maintain framework regularity, counterbalancing Cu’s Jahn–Teller distortions and Mn’s larger radius, thereby improving lattice robustness and porosity.
+
+How this five-metal set meets the design criteria
+
+- High catalytic activity: Ni provides the dominant UOR active sites; Fe promotes Ni redox and electronic conductivity; Cu and Mn contribute synergistically to electron transport and OH− management; Zn stabilizes active phases so they remain available over long operation. The high-entropy mix creates many unique local neighborhoods (e.g., Ni next to Cu–Mn versus Ni next to Zn–Fe), broadening adsorption energy distributions so a subset of sites achieves near-optimal binding for urea and hydroxide.
+- Stability and corrosion resistance: The CN-bridged Fe framework is chemically robust. High configurational entropy (R ln 5) increases phase stability, suppressing cation segregation and dissolution. Zn and Mn improve corrosion resistance via benign passivation behavior. The framework tolerates surface reconstruction to (oxy)hydroxides while retaining mechanical integrity.
+- Low cost and environmental friendliness: All five metals (Ni, Fe, Cu, Mn, Zn) are abundant, inexpensive, and lack significant environmental red flags compared to Co (supply-chain/health concerns), Cr (hexavalent toxicity risk), and noble metals. Cyanide is strongly bound in [Fe(CN)6]3−; with proper synthesis and washing, free CN is negligible, making the material suitable for practical use.
+- Ease of synthesis: Aqueous co-precipitation at room temperature using mixed M2+ salts with K3[Fe(CN)6] yields uniform HE-PBA nanoparticles or nanocubes. Growth onto nickel foam, carbon cloth, or stainless steel meshes can be done directly without high-temperature steps, and vacancy content (porosity) is tuneable by stoichiometry and pH.
+- Structural features conducive to UOR: The cubic PBA network has interconnected channels and intrinsic [Fe(CN)6] vacancies that host water, facilitating rapid OH− and urea transport. Mixed-valence Fe improves electronic conduction. Local microstrain from Cu and radius mismatches (Mn vs Ni/Zn/Cu) increases defect density and exposes more active sites. Under operation, the surface converts to a multi-metal (oxy)hydroxide layer (Ni–Cu–Mn–Fe–Zn)(OH)x with a conductive CN-Fe core, combining high activity with mechanical stability.
+
+Metals deliberately avoided and why
+- Noble metals (Pt, Ir, Ru): excellent activity but high cost and lower environmental acceptability.
+- Cobalt (Co): strong UOR synergy with Ni but carries supply-chain and toxicity concerns; can be omitted while maintaining high performance via Cu/Mn/Fe synergy.
+- Chromium (Cr): Cr(III) is less problematic, but risks associated with Cr(VI) formation push it outside environmentally friendly design goals.
+- Molybdenum/Tungsten (Mo/W): oxyphilic and valuable in alkaline catalysis, but their cyanide coordination chemistry is less straightforward for PBA synthesis, complicating the “ease of synthesis” criterion.
+
+Practical synthesis and operation notes
+- Co-precipitation: Mix aqueous solutions of NiCl2, CuCl2, MnCl2, FeSO4 (or FeCl2), and ZnCl2 at near-equimolar ratios, then add K3[Fe(CN)6] under stirring at room temperature. Control pH (neutral to mildly alkaline) and ionic strength to tune particle size and vacancy fraction. Grow directly on porous conducting substrates for binder-free electrodes.
+- Activation: Prior to testing, cycle the electrode in alkaline (e.g., 1 M KOH) to induce controlled surface reconstruction to (oxy)hydroxide, while preserving the CN-Fe core.
+- Safety/environment: Use stoichiometric excess of metal salts to eliminate free [Fe(CN)6]3− in supernatant; thoroughly wash the precipitate to remove soluble species. The hexacyanoferrate framework is stable in alkaline media, minimizing cyanide release.
+
+Expected performance features in alkaline UOR
+- Lower onset potential due to Ni–Fe–Cu synergy and fast OH− transport through the porous PBA network.
+- Small Tafel slopes and high mass activity from the abundance of multi-metal active sites and improved conductivity.
+- Long-term durability from high-entropy stabilization and Zn/Mn-assisted corrosion resistance.
+
+In summary, the Ni–Fe–Cu–Mn–Zn high-entropy PBA balances activity, stability, cost, environmental friendliness, and synthetic simplicity. Ni anchors UOR activity; Fe builds the conductive CN framework and redox synergy; Cu accelerates charge transfer and lowers onset; Mn enhances OH− management and robustness; and Zn provides valence stability and corrosion resistance, all within a scalable, water-based synthesis that avoids high-cost or environmentally problematic metals.
