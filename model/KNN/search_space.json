@@ -1,0 +1,7 @@
+{
+  "seed": {"_type": "choice", "_value": [106]},
+  "n_neighbors": {"_type": "quniform", "_value": [5,15,1]},
+  "leaf_size": {"_type": "choice", "_value": [20,25,30,35,40]},
+  "weights": {"_type": "choice", "_value": ["uniform"]},
+  "p": {"_type": "choice", "_value": [1,2]}
+}
