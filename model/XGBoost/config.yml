@@ -1,0 +1,14 @@
+experimentName: three
+trialConcurrency: 1
+maxExperimentDuration: 1.5h
+maxTrialNumber: 200
+searchSpaceFile: search_space.json
+useAnnotation: false
+trialCommand: python train_XGBoost.py
+trialCodeDirectory: .
+trialGpuNumber: 0  # 确保设置为 0
+tuner:
+  name: TPE
+trainingService:
+  platform: local
+  useActiveGpu: false  # 确保不使用活动 GPU
