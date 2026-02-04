@@ -1,8 +1,0 @@
-{
-  "seed": {"_type": "choice", "_value": [106]},
-  "max_depth": {"_type": "choice", "_value": [3,4,5,6]},
-  "min_child_weight": {"_type": "choice", "_value": [0.3,0.4,0.5,0.7,0.8]},
-  "gamma": {"_type": "choice", "_value": [1,2,3]},
-  "subsample": {"_type": "choice", "_value": [0.9]},
-  "colsample_bytree": {"_type": "choice", "_value": [0.8]}
-}
