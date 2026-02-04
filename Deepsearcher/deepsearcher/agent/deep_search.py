@@ -1,5 +1,10 @@
 import asyncio
 from typing import List, Tuple
+import ast
+import re
+
+import asyncio
+from typing import List, Tuple
 
 from deepsearcher.agent.base import RAGAgent, describe_class
 from deepsearcher.agent.collection_router import CollectionRouter
@@ -9,25 +14,29 @@ from deepsearcher.utils import log
 from deepsearcher.vector_db import RetrievalResult
 from deepsearcher.vector_db.base import BaseVectorDB, deduplicate_results
 
-SUB_QUERY_PROMPT = """To answer this question more comprehensively, please break down the original question into up to four sub-questions. Return as list of str.
-If this is a very simple question and no decomposition is necessary, then keep the only one original question in the python code list.
+SUB_QUERY_PROMPT = """You are a query decomposition tool.
+
+Given the original question, you MUST output ONLY a valid Python list of strings and NOTHING ELSE.
+
+Rules:
+- The entire response must be exactly one Python list literal.
+- Use double quotes for all strings.
+- Do NOT insert line breaks inside a string. Each question must be in a single line/string.
+- Do NOT add any explanations, headings, or extra text before or after the list.
 
 Original Question: {original_query}
 
-
 <EXAMPLE>
 Example input:
-"Explain deep learning"
+Explain deep learning
 
 Example output:
 [
     "What is deep learning?",
-    "What is the difference between deep learning and machine learning?",
-    "What is the history of deep learning?"
+    "What is the difference between deep learning and traditional machine learning?",
+    "What are the main historical milestones in the development of deep learning?"
 ]
 </EXAMPLE>
-
-Provide your response in a python code list of str format:
 """
 
 RERANK_PROMPT = """Based on the query questions and the retrieved chunk, to determine whether the chunk is helpful in answering any of the query question, you can only return "YES" or "NO", without any other information.
@@ -109,13 +118,53 @@ class DeepSearch(RAGAgent):
         self.text_window_splitter = text_window_splitter
 
     def _generate_sub_queries(self, original_query: str) -> Tuple[List[str], int]:
+        """
+        Use LLM to decompose the original query into sub-queries.
+
+        This method is robust to noisy LLM output:
+        - First tries llm.literal_eval(response_content)
+        - If that fails, tries to extract the first [...] block via regex and ast.literal_eval
+        - If still fails, falls back to [original_query]
+        """
         chat_response = self.llm.chat(
             messages=[
                 {"role": "user", "content": SUB_QUERY_PROMPT.format(original_query=original_query)}
             ]
         )
-        response_content = chat_response.content
-        return self.llm.literal_eval(response_content), chat_response.total_tokens
+        response_content = self.llm.remove_think(chat_response.content).strip()
+
+        # 默认兜底：如果一切都解析失败，就用原始 query 作为唯一子问题
+        sub_queries: List[str] = [original_query]
+
+        # 1) 尝试使用 llm.literal_eval 直接解析
+        try:
+            parsed = self.llm.literal_eval(response_content)
+        except Exception:
+            parsed = None
+
+        # 2) 如果直接解析失败，尝试从中提取第一个 [...] 段再用 ast.literal_eval
+        if parsed is None:
+            m = re.search(r'\[.*\]', response_content, flags=re.S)
+            if m:
+                literal_text = m.group(0)
+                try:
+                    parsed = ast.literal_eval(literal_text)
+                except Exception:
+                    parsed = None
+
+        # 3) 规整输出为 List[str]
+        if isinstance(parsed, list):
+            cleaned: List[str] = []
+            for q in parsed:
+                if q is None:
+                    continue
+                qs = str(q).strip()
+                if qs:
+                    cleaned.append(qs)
+            if cleaned:
+                sub_queries = cleaned
+
+        return sub_queries, chat_response.total_tokens
 
     async def _search_chunks_from_vectordb(self, query: str, sub_queries: List[str]):
         consume_tokens = 0
@@ -133,7 +182,7 @@ class DeepSearch(RAGAgent):
         for collection in selected_collections:
             log.color_print(f"<search> Search [{query}] in [{collection}]...  </search>\n")
             retrieved_results = self.vector_db.search_data(
-                collection=collection, vector=query_vector
+                collection=collection, vector=query_vector, query_text=query
             )
             if not retrieved_results or len(retrieved_results) == 0:
                 log.color_print(
@@ -155,11 +204,7 @@ class DeepSearch(RAGAgent):
                     ]
                 )
                 consume_tokens += chat_response.total_tokens
-                response_content = chat_response.content.strip()
-                # strip the reasoning text if exists
-                if "<think>" in response_content and "</think>" in response_content:
-                    end_of_think = response_content.find("</think>") + len("</think>")
-                    response_content = response_content[end_of_think:].strip()
+                response_content = self.llm.remove_think(chat_response.content).strip()
                 if "YES" in response_content and "NO" not in response_content:
                     all_retrieved_results.append(retrieved_result)
                     accepted_chunk_num += 1
@@ -175,8 +220,13 @@ class DeepSearch(RAGAgent):
         return all_retrieved_results, consume_tokens
 
     def _generate_gap_queries(
-        self, original_query: str, all_sub_queries: List[str], all_chunks: List[RetrievalResult]
+            self, original_query: str, all_sub_queries: List[str], all_chunks: List[RetrievalResult]
     ) -> Tuple[List[str], int]:
+        """
+        Reflect on existing results and generate new 'gap' queries if needed.
+
+        Same robustness logic as _generate_sub_queries.
+        """
         reflect_prompt = REFLECT_PROMPT.format(
             question=original_query,
             mini_questions=all_sub_queries,
@@ -185,8 +235,38 @@ class DeepSearch(RAGAgent):
             else "NO RELATED CHUNKS FOUND.",
         )
         chat_response = self.llm.chat([{"role": "user", "content": reflect_prompt}])
-        response_content = chat_response.content
-        return self.llm.literal_eval(response_content), chat_response.total_tokens
+        response_content = self.llm.remove_think(chat_response.content).strip()
+
+        gap_queries: List[str] = []
+
+        # 1) 先尝试 llm.literal_eval
+        try:
+            parsed = self.llm.literal_eval(response_content)
+        except Exception:
+            parsed = None
+
+        # 2) 再尝试手动提取 [...]
+        if parsed is None:
+            m = re.search(r'\[.*\]', response_content, flags=re.S)
+            if m:
+                literal_text = m.group(0)
+                try:
+                    parsed = ast.literal_eval(literal_text)
+                except Exception:
+                    parsed = None
+
+        # 3) 规整为 List[str]；如果为空就返回 []
+        if isinstance(parsed, list):
+            cleaned: List[str] = []
+            for q in parsed:
+                if q is None:
+                    continue
+                qs = str(q).strip()
+                if qs:
+                    cleaned.append(qs)
+            gap_queries = cleaned
+
+        return gap_queries, chat_response.total_tokens
 
     def retrieve(self, original_query: str, **kwargs) -> Tuple[List[RetrievalResult], int, dict]:
         """
@@ -309,9 +389,9 @@ class DeepSearch(RAGAgent):
         )
         chat_response = self.llm.chat([{"role": "user", "content": summary_prompt}])
         log.color_print("\n==== FINAL ANSWER====\n")
-        log.color_print(chat_response.content)
+        log.color_print(self.llm.remove_think(chat_response.content))
         return (
-            chat_response.content,
+            self.llm.remove_think(chat_response.content),
             all_retrieved_results,
             n_token_retrieval + chat_response.total_tokens,
         )

@@ -131,7 +131,7 @@ class ChainOfRAG(RAGAgent):
                 }
             ]
         )
-        return chat_response.content, chat_response.total_tokens
+        return self.llm.remove_think(chat_response.content), chat_response.total_tokens
 
     def _retrieve_and_answer(self, query: str) -> Tuple[str, List[RetrievalResult], int]:
         consume_tokens = 0
@@ -148,8 +148,7 @@ class ChainOfRAG(RAGAgent):
             log.color_print(f"<search> Search [{query}] in [{collection}]...  </search>\n")
             query_vector = self.embedding_model.embed_query(query)
             retrieved_results = self.vector_db.search_data(
-                collection=collection,
-                vector=query_vector,
+                collection=collection, vector=query_vector, query_text=query
             )
             all_retrieved_results.extend(retrieved_results)
         all_retrieved_results = deduplicate_results(all_retrieved_results)
@@ -165,7 +164,7 @@ class ChainOfRAG(RAGAgent):
             ]
         )
         return (
-            chat_response.content,
+            self.llm.remove_think(chat_response.content),
             all_retrieved_results,
             consume_tokens + chat_response.total_tokens,
         )
@@ -217,7 +216,7 @@ class ChainOfRAG(RAGAgent):
                 }
             ]
         )
-        has_enough_info = chat_response.content.strip().lower() == "yes"
+        has_enough_info = self.llm.remove_think(chat_response.content).strip().lower() == "yes"
         return has_enough_info, chat_response.total_tokens
 
     def retrieve(self, query: str, **kwargs) -> Tuple[List[RetrievalResult], int, dict]:
@@ -309,9 +308,9 @@ class ChainOfRAG(RAGAgent):
             ]
         )
         log.color_print("\n==== FINAL ANSWER====\n")
-        log.color_print(chat_response.content)
+        log.color_print(self.llm.remove_think(chat_response.content))
         return (
-            chat_response.content,
+            self.llm.remove_think(chat_response.content),
             all_retrieved_results,
             n_token_retrieval + chat_response.total_tokens,
         )
