@@ -1,0 +1,203 @@
+<query> How to design a synthesis protocol for a high-entropy Prussian blue analog (HE-PBA) catalyst using cobalt cyanide K3[Co(CN)6] as the framework and incorporating five transition metals (Fe, Co, Ni, Mn, Zn)? Please provide step-by-step instructions. </query>
+
+<think> Break down the original query into new sub queries: ['What are the target composition, oxidation states, and catalytic performance goals for the HE-PBA (Fe, Co, Ni, Mn, Zn) built from the K3[Co(CN)6] framework?', 'Which metal precursors, solvents, pH control/complexing agents, and stoichiometric ratios should be selected, and how should the K3[Co(CN)6] concentration relate to the total metal concentration to ensure charge balance and full coordination?', 'What is the detailed, step-by-step synthesis route (e.g., co-precipitation) including order of addition, concentrations, mixing rate, temperature, time, atmosphere, and necessary safety practices for cyanide handling to obtain a single-phase, homogeneously mixed HE-PBA?', 'What post-synthesis treatments (washing, ion exchange, drying/annealing) and characterization/performance methods (e.g., XRD, FTIR, ICP-OES, XPS, TEM, BET, electrochemical tests) are needed to confirm structure, entropy-level mixing, and catalytic activity?']</think>
+
+>> Iteration: 1
+
+<think> Perform search [What are the target composition, oxidation states, and catalytic performance goals for the HE-PBA (Fe, Co, Ni, Mn, Zn) built from the K3[Co(CN)6] framework?] on the vector DB collection: deepsearcher </think>
+
+<search> Search [What are the target composition, oxidation states, and catalytic performance goals for the HE-PBA (Fe, Co, Ni, Mn, Zn) built from the K3[Co(CN)6] framework?] in [deepsearcher]...  </search>
+
+<search> Accept 3 document chunk(s) from references: ['D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\paper\\1-s2.0-S2405829724004094-main.pdf', 'D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\paper\\smll202311452-sup-0001-suppmat.pdf', 'D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\paper\\Angew Chem Int Ed - 2022 - Du - High‐Entropy Prussian Blue Analogues and Their Oxide Family as Sulfur Hosts for.pdf'] </search>
+
+<think> Perform search [Which metal precursors, solvents, pH control/complexing agents, and stoichiometric ratios should be selected, and how should the K3[Co(CN)6] concentration relate to the total metal concentration to ensure charge balance and full coordination?] on the vector DB collection: deepsearcher </think>
+
+<search> Search [Which metal precursors, solvents, pH control/complexing agents, and stoichiometric ratios should be selected, and how should the K3[Co(CN)6] concentration relate to the total metal concentration to ensure charge balance and full coordination?] in [deepsearcher]...  </search>
+
+<search> Accept 2 document chunk(s) from references: ['D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\paper\\1-s2.0-S2405829724004094-main.pdf', 'D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\paper\\Small - 2023 - Ali - In Situ Fe‐Substituted Hexacyanoferrate for High‐Performance Aqueous Potassium Ion Batteries.pdf'] </search>
+
+<think> Perform search [What is the detailed, step-by-step synthesis route (e.g., co-precipitation) including order of addition, concentrations, mixing rate, temperature, time, atmosphere, and necessary safety practices for cyanide handling to obtain a single-phase, homogeneously mixed HE-PBA?] on the vector DB collection: deepsearcher </think>
+
+<search> Search [What is the detailed, step-by-step synthesis route (e.g., co-precipitation) including order of addition, concentrations, mixing rate, temperature, time, atmosphere, and necessary safety practices for cyanide handling to obtain a single-phase, homogeneously mixed HE-PBA?] in [deepsearcher]...  </search>
+
+<search> Accept 4 document chunk(s) from references: ['D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\paper\\1-s2.0-S2405829724004094-mmc1.pdf', 'D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\paper\\1-s2.0-S2405829723001137-main.pdf', 'D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\paper\\1-s2.0-S2405829723001137-mmc1.pdf', 'D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\paper\\1-s2.0-S2405829724004094-main.pdf'] </search>
+
+<think> Perform search [What post-synthesis treatments (washing, ion exchange, drying/annealing) and characterization/performance methods (e.g., XRD, FTIR, ICP-OES, XPS, TEM, BET, electrochemical tests) are needed to confirm structure, entropy-level mixing, and catalytic activity?] on the vector DB collection: deepsearcher </think>
+
+<search> Search [What post-synthesis treatments (washing, ion exchange, drying/annealing) and characterization/performance methods (e.g., XRD, FTIR, ICP-OES, XPS, TEM, BET, electrochemical tests) are needed to confirm structure, entropy-level mixing, and catalytic activity?] in [deepsearcher]...  </search>
+
+<search> Accept 5 document chunk(s) from references: ['D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\paper\\nl4c04807_si_001.pdf', 'D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\paper\\sstr202400163-sup-0001-suppdata-s1.pdf', 'D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\paper\\anie202410420-sup-0001-misc_information.pdf', 'D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\paper\\anie202212031-sup-0001-misc_information.pdf', 'D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\paper\\anie201914743-sup-0001-misc_information.pdf'] </search>
+
+<think> Reflecting on the search results... </think>
+
+<think> New search queries for next iteration: ['K3[Co(CN)6]-based Prussian blue analog synthesis (M3[Co(CN)6]2) via co-precipitation with citrate control', 'High-entropy Prussian blue analog using hexacyanocobaltate(III) incorporating Fe, Co, Ni, Mn, Zn: synthesis protocol and stoichiometry', 'Hexacyanocobaltate/cyanide handling: pH control and waste disposal (alkaline hypochlorite) laboratory guidelines'] </think>
+
+>> Iteration: 2
+
+<think> Perform search [K3[Co(CN)6]-based Prussian blue analog synthesis (M3[Co(CN)6]2) via co-precipitation with citrate control] on the vector DB collection: deepsearcher </think>
+
+<search> Search [K3[Co(CN)6]-based Prussian blue analog synthesis (M3[Co(CN)6]2) via co-precipitation with citrate control] in [deepsearcher]...  </search>
+
+<search> No document chunk accepted from 'deepsearcher'! </search>
+
+<think> Perform search [High-entropy Prussian blue analog using hexacyanocobaltate(III) incorporating Fe, Co, Ni, Mn, Zn: synthesis protocol and stoichiometry] on the vector DB collection: deepsearcher </think>
+
+<search> Search [High-entropy Prussian blue analog using hexacyanocobaltate(III) incorporating Fe, Co, Ni, Mn, Zn: synthesis protocol and stoichiometry] in [deepsearcher]...  </search>
+
+<search> No document chunk accepted from 'deepsearcher'! </search>
+
+<think> Perform search [Hexacyanocobaltate/cyanide handling: pH control and waste disposal (alkaline hypochlorite) laboratory guidelines] on the vector DB collection: deepsearcher </think>
+
+<search> Search [Hexacyanocobaltate/cyanide handling: pH control and waste disposal (alkaline hypochlorite) laboratory guidelines] in [deepsearcher]...  </search>
+
+<search> Accept 1 document chunk(s) from references: ['D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\paper\\Small - 2019 - Li - Chemical Properties  Structural Properties  and Energy Storage Applications of Prussian Blue Analogues.pdf'] </search>
+
+<think> Reflecting on the search results... </think>
+
+<think> New search queries for next iteration: ['Hexacyanocobaltate(III)-based Prussian blue analog synthesis using K3[Co(CN)6] with mixed M2+ (Fe2+, Co2+, Ni2+, Mn2+, Zn2+) citrate-controlled co-precipitation', 'Stoichiometry and pH for M3[Co(CN)6]2 formation: total M2+ to [Co(CN)6]3– ratio, use of KCl/ionic strength, mixing/aging to obtain single-phase high-entropy PBA', 'Cyanide safety and waste disposal for hexacyanometallate solutions: maintaining alkaline pH, preventing HCN, alkaline hypochlorite oxidation protocols'] </think>
+
+>> Iteration: 3
+
+<think> Perform search [Hexacyanocobaltate(III)-based Prussian blue analog synthesis using K3[Co(CN)6] with mixed M2+ (Fe2+, Co2+, Ni2+, Mn2+, Zn2+) citrate-controlled co-precipitation] on the vector DB collection: deepsearcher </think>
+
+<search> Search [Hexacyanocobaltate(III)-based Prussian blue analog synthesis using K3[Co(CN)6] with mixed M2+ (Fe2+, Co2+, Ni2+, Mn2+, Zn2+) citrate-controlled co-precipitation] in [deepsearcher]...  </search>
+
+<search> Accept 3 document chunk(s) from references: ['D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\paper\\1-s2.0-S2405829723001137-mmc1.pdf', 'D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\paper\\adma202101342-sup-0001-suppmat.pdf', 'D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\paper\\adfm202314860-sup-0001-suppmat.pdf'] </search>
+
+<think> Perform search [Stoichiometry and pH for M3[Co(CN)6]2 formation: total M2+ to [Co(CN)6]3– ratio, use of KCl/ionic strength, mixing/aging to obtain single-phase high-entropy PBA] on the vector DB collection: deepsearcher </think>
+
+<search> Search [Stoichiometry and pH for M3[Co(CN)6]2 formation: total M2+ to [Co(CN)6]3– ratio, use of KCl/ionic strength, mixing/aging to obtain single-phase high-entropy PBA] in [deepsearcher]...  </search>
+
+<search> Accept 1 document chunk(s) from references: ['D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\paper\\smll202311452-sup-0001-suppmat.pdf'] </search>
+
+<think> Perform search [Cyanide safety and waste disposal for hexacyanometallate solutions: maintaining alkaline pH, preventing HCN, alkaline hypochlorite oxidation protocols] on the vector DB collection: deepsearcher </think>
+
+<search> Search [Cyanide safety and waste disposal for hexacyanometallate solutions: maintaining alkaline pH, preventing HCN, alkaline hypochlorite oxidation protocols] in [deepsearcher]...  </search>
+
+<search> Accept 1 document chunk(s) from references: ['D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\paper\\Adv Funct Materials - 2024 - Obisanya - Multiscale Scrutinizing Ion Storage Kinetics in Hollow Ni‐Mn Prussian Blue.pdf'] </search>
+
+<think> Reflecting on the search results... </think>
+
+<think> No new search queries were generated. Exiting. </think>
+
+<think> Summarize answer from all 18 retrieved chunks... </think>
+
+
+==== FINAL ANSWER====
+
+Below is a consolidated, step-by-step protocol and supporting rationale to design and synthesize a high-entropy Prussian blue analog (HE-PBA) catalyst built on a cobalt cyanide framework using K3[Co(CN)6] and five transition metals (Fe, Co, Ni, Mn, Zn). The plan integrates target composition/oxidation states/performance goals; precursor and solution design (including stoichiometry, complexation, pH, ionic strength); detailed co-precipitation steps; post-treatments; characterization; and cyanide safety and waste handling practices, consistent with established citrate-controlled PBA/HE-PBA methods and cyanide guidelines.
+
+1) Target composition, oxidation states, and performance goals
+- Framework: Hexacyanocobaltate(III), [CoIII(CN)6]3−, supplied by K3[Co(CN)6].
+- Metal-linker site (the 4b site): Equimolar mixture of Fe2+, Co2+, Ni2+, Mn2+, Zn2+ occupying the M2+ positions.
+- Nominal formula: (Fe0.2Co0.2Ni0.2Mn0.2Zn0.2)3[CoIII(CN)6]2·nH2O (low-vacancy, zeolitic water only). This follows the M3[Co(CN)6]2 charge balance: 3×(+2) = +6 balanced by 2×(−3) = −6.
+- Configurational entropy target: Equimolar five-metal mixing maximizes configurational entropy at the M site, promoting uniform mixing and “cocktail effects” while suppressing vacancies.
+- Oxidation states in the as-synthesized solid: Co is fixed as CoIII in the hexacyanocobaltate; the five M cations are predominantly +2 (XANES across Co/Ni/Cu/Mn/Zn analogs typically indicates ~+2; Fe often resembles mixed valence references but in PBAs with cyanometalate framework, Fe at the M site is dominantly +2).
+- Catalytic performance goals (alkaline OER benchmark example):
+  - Overpotential at 10 mA cm−2 ≤ 350 mV in 1 M KOH (or similar alkaline electrolyte).
+  - Tafel slope ≤ 60–80 mV dec−1.
+  - Stable chronoamperometry for ≥10 h with minimal performance decay; XPS after catalysis should show partial oxidation of active sites (e.g., Co2+→Co3+) consistent with OER, but no bulk decomposition.
+
+2) Reagents, solutions, stoichiometry, and control agents
+- Metal precursors (analytical grade): FeCl2·4H2O, CoCl2·6H2O, NiCl2·6H2O, MnCl2·4H2O, ZnCl2 (or corresponding sulfates if needed; use Fe2+ salt, keep oxygen minimized). Chlorides are common and readily soluble.
+- Cyanometalate: K3[Co(CN)6] (hexacyanocobaltate(III)).
+- Complexing agent: Sodium citrate (chelates M2+ to slow precipitation, reduce vacancies, control particle size/morphology).
+- Ionic strength modifier: KCl (0.5–1.5 M; high ionic strength reduces framework defects and stabilizes growth).
+- pH control base: KOH or NaOH (maintain pH 9–10.5 to keep cyanide complex stable and prevent HCN formation).
+- Optional: Deoxygenation under inert gas (Ar/N2 bubbling), small amount of ascorbate for Fe2+ stabilization if needed (ensure final solution remains alkaline).
+- Solvent: Deionized water.
+
+Stoichiometry (for a practical batch example)
+- Choose [Co(CN)6]3− moles and set total M2+ at 3:2 ratio to ensure full coordination and charge balance.
+- Example: If using 2.0 mmol K3[Co(CN)6] in solution A, use total M2+ = 3.0 mmol in solution B.
+- Equimolar five-metal split: Fe2+, Co2+, Ni2+, Mn2+, Zn2+ each 0.60 mmol (total 3.00 mmol).
+- Sodium citrate: 1.0–2.0 equivalents per mmol of total metal cations (3.0–6.0 mmol total citrate). Higher citrate promotes fewer vacancies and can yield larger/single-crystal particles; moderate citrate yields smaller nanoparticles.
+- KCl: Target 0.5–1.5 M in the mixed reaction medium (e.g., add 1.4 M KCl to one solution as shown in related syntheses).
+
+3) Detailed synthesis route (citrate-controlled co-precipitation)
+Preparation and pre-chelation
+- Work in a fume hood; wear appropriate PPE; ensure cyanide SOPs are in place (see safety section).
+- Degas DI water by bubbling Ar/N2 for ≥30 min before preparing solutions.
+- Solution A (cyanometalate): Dissolve K3[Co(CN)6] to 0.10 M in DI water (e.g., 20 mL to give 2.0 mmol). Keep alkaline (pH ~10 with a small amount of KOH). Optionally add KCl to reach desired ionic strength (e.g., 1.0 M).
+- Solution B (metal-citrate chelates):
+  - In separate beakers, dissolve each metal salt in DI water (FeCl2, CoCl2, NiCl2, MnCl2, ZnCl2) to achieve total 3.0 mmol metal content when combined (each 0.60 mmol).
+  - Add sodium citrate to achieve 1–2 eq per total metal (3–6 mmol total). Adjust pH to 9–10 with KOH/NaOH.
+  - Bubble Ar and stir for 2–3 h to allow full metal-citrate complexation. Combine the five chelate solutions into one composite Solution B. If targeting single-crystal particles, use a citrate-rich formulation.
+
+Mixing and precipitation
+- Reservoir: Place 200–500 mL DI water in a jacketed beaker or flask under continuous magnetic stirring (500–800 rpm), maintain pH 9–10, add KCl to reach ~1.0 M ionic strength, and keep Ar/N2 flowing over the headspace (and optionally bubbled).
+- Using a peristaltic pump, add Solution A (K3[Co(CN)6]) and Solution B (five-metal citrate mixture) simultaneously, slowly, and dropwise into the reservoir to minimize local supersaturation. Typical combined feed rate: 0.5–2 mL min−1 per stream, depending on scale. Maintain room temperature (20–25 °C). For more crystalline materials, mild heating (30–60 °C) and slower addition rates are acceptable.
+- Keep pH at 9–10 throughout (titrate with KOH if needed) and maintain constant ionic strength (KCl).
+- After complete addition, continue stirring for 2 h, then age the suspension quiescently for 24–48 h under Ar/N2 at the same temperature. Aging consolidates crystallinity and homogenizes cation distribution.
+
+Isolation and washing
+- Collect the precipitate by centrifugation.
+- Wash repeatedly: DI water (3–5×) to remove KCl, unreacted salts, and free cyanide; followed by ethanol (2–3×) to displace interstitial water and enhance drying.
+- Dry under vacuum at 60–100 °C for 12–24 h. Avoid overheating to prevent framework damage.
+
+Optional post-synthesis modifications for catalytic enhancement
+- Surface reduction/activation: Disperse the HE-PBA powder in DI water and slowly add freshly prepared NaBH4 solution (e.g., 2.5–10 mg NaBH4 per 25 mg HE-PBA) under stirring for 12–24 h. This can introduce defect-rich/active sites and partially reduced surface states. Exercise caution with hydrogen evolution and cyanide safety; keep alkaline pH.
+- Controlled ion exchange/hydration: Briefly soak in 0.1–1.0 M KCl or NaCl at pH ~10 to tune alkali content and water of crystallization, then re-wash and dry.
+
+4) Notes for tuning particle size, phase purity, and homogeneity
+- Vacancies suppression: High citrate concentration, slow dropwise addition, elevated ionic strength (KCl), and aging time reduce lattice vacancies and improve phase purity.
+- Atmosphere: Ar/N2 protects Fe2+ from oxidation and prevents CO2 ingress that might acidify the medium.
+- Single-crystal vs nanoparticle: Saturated or high citrate and very slow addition plus long aging favor larger/single-crystal HE-PBA; moderate citrate and faster mixing favor smaller, cubic nanoparticles (~80–200 nm), which can be advantageous for catalytic surface area.
+- Composition homogeneity: Pre-chelation of the five metals with citrate and simultaneous co-addition with K3[Co(CN)6] are critical to uniform multi-cation incorporation.
+
+5) Characterization to confirm structure, entropy-level mixing, and catalyst performance
+Structural/compositional
+- XRD with Rietveld refinement: Confirm single-phase face-centered cubic Prussian blue analog (space group F-43m). Absence of impurity peaks indicates successful single-phase HE-PBA.
+- FTIR: CN stretching bands (≈2080–2150 cm−1) verifying cyanide coordination and intact framework.
+- ICP-OES/AES: Quantify Fe/Co/Ni/Mn/Zn atomic ratios to confirm equimolar incorporation (≈1:1:1:1:1 within error).
+- XPS: Surface valence states of Fe, Co, Ni, Mn, Zn (expect predominantly +2 at M site; CoIII central cyanide unit not directly observed, but CN bonding signatures support it).
+- TEM/HAADF-STEM + EDS mapping: Particle size, morphology (cubic/spherical), and uniform elemental distribution at the nanoscale.
+- BET: Specific surface area relevant for catalysis.
+- Optional XANES/EXAFS: Verify oxidation states and local coordination of each metal; across similar HE-PBAs, Co/Ni/Cu/Mn/Zn K-edge XANES resemble their +2 oxides, indicating M2+ states.
+
+Catalytic testing (alkaline OER example)
+- Prepare catalyst ink with HE-PBA and conductive carbon; drop-cast on glassy carbon or coat on a suitable substrate (e.g., Ni foam or TiO2 NWs).
+- Electrolyte: 1.0 M KOH (or 0.1 M KOH for benchmarking).
+- Measure:
+  - Linear sweep voltammetry (LSV) to obtain overpotential at 10 mA cm−2.
+  - Tafel plot for kinetics.
+  - Electrochemical impedance spectroscopy (EIS) for charge transfer resistance.
+  - Chronoamperometry/chronopotentiometry (≥10 h) to assess stability; post-test XPS to identify partial oxidation (e.g., Co2+→Co3+) during OER, consistent with active catalysis.
+- Optional: Calculate turnover frequency, mass activity, and electrochemical active surface area (ECSA) via double-layer capacitance.
+
+6) Cyanide safety and waste disposal (mandatory)
+- Engineering controls and PPE:
+  - Conduct all cyanide-related steps in a certified fume hood.
+  - Wear lab coat, chemical-resistant gloves, safety goggles/face shield; keep cyanide antidote kit and spill kit accessible per institutional policy.
+- pH control:
+  - Maintain solutions at pH ≥10 at all times. Never acidify cyanide-containing solutions or wet wastes, as this can release HCN gas.
+- Storage and labeling:
+  - Clearly label cyanide solutions; store securely and segregated from acids and oxidizers (except bleach used for waste treatment under controlled alkaline conditions).
+- Waste handling:
+  - Collect cyanide-bearing liquid and rinse in dedicated, sealed containers kept alkaline (pH 10–11).
+  - Alkaline hypochlorite oxidation: Under pH 10–11, add NaOCl to achieve free available chlorine ~50–200 mg L−1; stir for ≥1 h to convert CN− to the less toxic cyanate (CNO−). Verify residual free cyanide with test kits; repeat if needed.
+  - After cyanide destruction (CN− below regulatory threshold), neutralize if required and dispose per local regulations. Solid wastes should be kept alkaline and managed as hazardous waste. Coordinate with institutional EHS.
+
+7) Example recipe (2 mmol [Co(CN)6]3− scale)
+- Solution A: K3[Co(CN)6], 0.10 M, 20 mL (2.0 mmol) in DI water; adjust pH to ~10 with KOH; add KCl to 1.0 M; Ar-bubble 30 min.
+- Solution B:
+  - FeCl2·4H2O: 0.60 mmol
+  - CoCl2·6H2O: 0.60 mmol
+  - NiCl2·6H2O: 0.60 mmol
+  - MnCl2·4H2O: 0.60 mmol
+  - ZnCl2: 0.60 mmol
+  - Sodium citrate: 3.0–6.0 mmol total (≥1 eq per total metal).
+  - Dissolve in DI water (~150–250 mL), adjust pH to 9–10 with KOH; Ar-bubble and stir 2–3 h for chelation.
+- Reservoir: 300 mL DI water, pH 9–10 (KOH), 1.0 M KCl, Ar purge, 25 °C.
+- Addition: Simultaneously add Solution A and Solution B at ~1 mL min−1 each; maintain pH/ionic strength; stir 2 h post-addition; age 24–48 h under Ar at 25 °C.
+- Workup: Centrifuge; wash 3–5× with DI water, then 2–3× with ethanol; vacuum dry 60–100 °C for 12–24 h.
+
+8) Common pitfalls and troubleshooting
+- Mixed phases or broad XRD peaks: Increase citrate concentration, slow the addition rate, raise ionic strength (KCl), ensure thorough pre-chelation and Ar protection.
+- Oxidation of Fe2+: Improve deoxygenation, shorten preparation times, consider a small alkaline-compatible reductant while keeping pH ≥9.
+- Poor catalytic activity: Increase surface area via nanoparticle synthesis parameters; apply mild post-treatment (e.g., NaBH4) to activate surface; confirm uniform multi-cation mixing and low vacancy via ICP and XRD.
+
+This protocol, grounded in citrate-controlled co-precipitation with careful stoichiometry (M2+:[Co(CN)6]3− = 3:2), inert atmosphere, alkaline pH, and high ionic strength, is designed to yield a single-phase, homogeneously mixed, five-cation HE-PBA on the K3[Co(CN)6] framework with low vacancy and robust catalytic performance, while adhering to best practices for cyanide safety and waste management.
+✅ Collection 'deepsearcher' already exists, skipping data loading
+Using existing data
+查询结果已保存到 query_result.txt 文件中
