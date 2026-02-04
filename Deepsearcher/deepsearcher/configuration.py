@@ -209,27 +209,47 @@ def init_config(config: Configuration):
     web_crawler = module_factory.create_web_crawler()
     vector_db = module_factory.create_vector_db()
 
-    default_searcher = RAGRouter(
+    # default_searcher = RAGRouter(
+    #     llm=llm,
+    #     rag_agents=[
+    #         DeepSearch(
+    #             llm=llm,
+    #             embedding_model=embedding_model,
+    #             vector_db=vector_db,
+    #             max_iter=config.query_settings["max_iter"],
+    #             route_collection=True,
+    #             text_window_splitter=True,
+    #         ),
+    #         ChainOfRAG(
+    #             llm=llm,
+    #             embedding_model=embedding_model,
+    #             vector_db=vector_db,
+    #             max_iter=config.query_settings["max_iter"],
+    #             route_collection=True,
+    #             text_window_splitter=True,
+    #         ),
+    #     ],
+    # )
+    # naive_rag = NaiveRAG(
+    #     llm=llm,
+    #     embedding_model=embedding_model,
+    #     vector_db=vector_db,
+    #     top_k=10,
+    #     route_collection=True,
+    #     text_window_splitter=True,
+    # )
+
+    ##https://chatgpt.com/s/t_69367b0761888191be9e7e5246ed8e22 源码已经把原因“钉死”了：同样 query()，之所以有时像 ChainOfRAG（每轮 1 次 search），有时像 DeepSearch（每轮拆多个子问题、同一轮多次 search），而 init_config() 里把 default_searcher 配成了 RAGRouter(…, rag_agents=[DeepSearch(...), ChainOfRAG(...)])。
+    # 也就是说：最终用哪个 agent，是 RAGRouter 在“自动路由”，不是你控制的。你想要“同一迭代多次 search、几轮就收敛”，那就不要让 Router 选，让 default_searcher 就是 DeepSearch：
+    default_searcher = DeepSearch(
         llm=llm,
-        rag_agents=[
-            DeepSearch(
-                llm=llm,
-                embedding_model=embedding_model,
-                vector_db=vector_db,
-                max_iter=config.query_settings["max_iter"],
-                route_collection=True,
-                text_window_splitter=True,
-            ),
-            ChainOfRAG(
-                llm=llm,
-                embedding_model=embedding_model,
-                vector_db=vector_db,
-                max_iter=config.query_settings["max_iter"],
-                route_collection=True,
-                text_window_splitter=True,
-            ),
-        ],
+        embedding_model=embedding_model,
+        vector_db=vector_db,
+        max_iter=config.query_settings["max_iter"],
+        route_collection=True,
+        text_window_splitter=True,
     )
+
     naive_rag = NaiveRAG(
         llm=llm,
         embedding_model=embedding_model,

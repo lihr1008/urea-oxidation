@@ -24,6 +24,12 @@ provide_settings:
 ##      api_key: "sk_xxxxxx"  # Uncomment to override the `PPIO_API_KEY` set in the environment variable
 ##      base_url: ""
 
+#    provider: "Jiekou.AI"
+#    config:
+#      model: "claude-sonnet-4-5-20250929"
+##      api_key: "xxxx"  # Uncomment to override the `JIEKOU_API_KEY` set in the environment variable
+##      base_url: ""
+
 #    provider: "TogetherAI"
 #    config:
 #      model: "deepseek-ai/DeepSeek-R1"
@@ -40,6 +46,11 @@ provide_settings:
 #    config:
 #      model: "qwq"
 ##      base_url: ""
+
+#    provider: "Novita"
+#    config:
+#      model: "deepseek/deepseek-v3-0324"
+##      api_key: "sk_xxxxxx"  # Uncomment to override the `NOVITA_API_KEY` set in the environment variable
 
   embedding:
     provider: "OpenAIEmbedding"
@@ -85,6 +96,14 @@ provide_settings:
 #    config:
 #      model: "BAAI/bge-small-en-v1.5"
 
+#    provider: "NovitaEmbedding"
+#    config:
+#      model: "baai/bge-m3"
+##      api_key: "sk_xxxxxx"  # Uncomment to override the `NOVITA_API_KEY` set in the environment variable
+
+    # provider: "SentenceTransformerEmbedding"
+    # config:
+    #   model: "BAAI/bge-large-zh-v1.5"
 
   file_loader:
     provider: "PDFLoader"
@@ -100,6 +119,10 @@ provide_settings:
 #    provider: "UnstructuredLoader"
 #    config: {}
 
+#    provider: "DoclingLoader"
+#    config: {}
+
+
   web_crawler:
     provider: "FireCrawlCrawler"
     config: {}
@@ -114,8 +137,11 @@ provide_settings:
     #     viewport_width: 800
     #     viewport_height: 600
     
-#    provider: "JinaCrawler"
-#    config: {}
+    #    provider: "JinaCrawler"
+    #    config: {}
+
+    #    provider: "DoclingCrawler"
+    #    config: {}
 
   vector_db:
     provider: "Milvus"
