@@ -1,0 +1,5 @@
+{
+  "seed": {"_type": "choice", "_value": [106]},
+  "C": {"_type": "quniform", "_value": [14,17,0.2]},
+  "epsilon": {"_type": "quniform", "_value": [0.6,0.7,0.01]}
+}
