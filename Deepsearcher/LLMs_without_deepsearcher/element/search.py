@@ -5,7 +5,7 @@ import uuid
 
 
 # 定义模型和API配置
-api_key = "sk-OC6Ph7dHDZdjTkTYgurWptyPYHCKx75PxFr1RxEktnH6Vtxq"
+api_key = ""
 
 # 定义请求头
 headers = {

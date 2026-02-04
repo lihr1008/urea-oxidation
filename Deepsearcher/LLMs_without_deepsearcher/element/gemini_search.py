@@ -3,7 +3,7 @@ import json
 
 # 定义模型和API配置
 model = "gemini-3-pro-preview"  # 使用的模型，其他模型名请直接复制https://api.probex.top/pricing页面对应的模型名
-api_key = "sk-OC6Ph7dHDZdjTkTYgurWptyPYHCKx75PxFr1RxEktnH6Vtxq"
+api_key = ""
 
 # 定义请求头
 headers = {
