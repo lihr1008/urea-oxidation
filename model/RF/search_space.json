@@ -1,0 +1,5 @@
+{
+  "seed1": {"_type": "choice", "_value": [106]},
+  "seed2": {"_type": "choice", "_value": [12,42,15,163,193,170,175,218,206,229,254,265]},
+  "n_estimators": {"_type": "quniform", "_value": [30,120,10]}
+}
