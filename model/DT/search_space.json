@@ -1,0 +1,9 @@
+{
+  "seed1": {"_type": "choice", "_value": [106]},
+  "seed2": {"_type": "quniform", "_value": [0,200,1]},
+  "max_depth": {"_type": "choice", "_value": [6]},
+  "min_samples_split": {"_type": "choice", "_value": [4]},
+  "min_samples_leaf": {"_type": "choice", "_value": [1]},
+  "max_leaf_nodes": {"_type": "choice", "_value": [64]},
+  "max_features": {"_type": "choice", "_value": [1.0]}
+}
