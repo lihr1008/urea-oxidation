@@ -1,0 +1,41 @@
+record_id,model,candidate,nominal_label,label_set,scenario_count,nominal_label_agreement_count,nominal_label_agreement_rate,changed_scenarios,variation_drivers,parameter_stable
+run_020148402fc4a275,gemini,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_052fbddb7e7b0390,gpt,Fe-Co-Ni-Mn-Zn,supported,flagged_insufficient; supported,11,7,0.6363636363636364,source_strong_discount; entailment_strong_discount; gate_strict; all_strict,source_weight; entailment_weight; gate_threshold; combined_parameters,no
+run_09cb718c41fd3a33,gemini,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient; supported,11,6,0.5454545454545454,source_weak_discount; traceability_weak_discount; entailment_weak_discount; gate_lenient; all_lenient,source_weight; traceability_weight; entailment_weight; gate_threshold; combined_parameters,no
+run_0b5d48cea00b1796,deepseek,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_1eccf111e49d796b,qwen,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_1edd3c414c7f50b3,gpt,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_2360feb965109230,gpt,Fe-Ni-Mn-Cu-Zn,flagged_insufficient,flagged_insufficient; supported,11,10,0.9090909090909091,all_lenient,combined_parameters,no
+run_353c84909b3aca98,qwen,Fe-Co-Ni-Mn-Cu,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_4c59c2c3497dce9e,deepseek,Fe-Co-Ni-Mn-Cu,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_51a24a9a75df8a5a,gpt,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient; supported,11,10,0.9090909090909091,all_lenient,combined_parameters,no
+run_5bd3e94ad1b2be23,gemini,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_5ca33401d63c3d35,deepseek,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_6e30d5d8c6193e21,gpt,Fe-Co-Ni-Cu-Zn,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_777dbcb559ff5378,deepseek,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_792c4b213139c5a4,gpt,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient; supported,11,10,0.9090909090909091,all_lenient,combined_parameters,no
+run_797f4ba4319fe372,qwen,Fe-Co-Ni-Mn-Cu,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_7fc47d306302f222,qwen,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_7fd29e5e06251830,gemini,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_910853e06b9095bf,deepseek,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient; supported,11,10,0.9090909090909091,all_lenient,combined_parameters,no
+run_94b6811a613c1128,gemini,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient; supported,11,10,0.9090909090909091,all_lenient,combined_parameters,no
+run_9750be7218796f0e,gemini,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient; supported,11,10,0.9090909090909091,all_lenient,combined_parameters,no
+run_9a1f52cb9067d9cb,gemini,Fe-Co-Ni-Mn-Zn,supported,flagged_insufficient; supported,11,6,0.5454545454545454,source_strong_discount; traceability_strong_discount; entailment_strong_discount; gate_strict; all_strict,source_weight; traceability_weight; entailment_weight; gate_threshold; combined_parameters,no
+run_af7ea8733bc97d35,gemini,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient; supported,11,9,0.8181818181818182,entailment_weak_discount; all_lenient,entailment_weight; combined_parameters,no
+run_b0e9fdfad699414b,qwen,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_b6e86c2e9b7b3255,qwen,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_bb3c2ac72325b1b4,qwen,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_bcaadea5c838c750,gpt,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient; supported,11,8,0.7272727272727273,traceability_weak_discount; entailment_weak_discount; all_lenient,traceability_weight; entailment_weight; combined_parameters,no
+run_be36c9c685335d71,qwen,Fe-Co-Ni-Cu-Zn,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_c0e9ba95a285f559,gpt,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_cb003639c449e5af,gpt,Fe-Co-Ni-Cu-Zn,flagged_insufficient,flagged_insufficient; supported,11,7,0.6363636363636364,traceability_weak_discount; entailment_weak_discount; gate_lenient; all_lenient,traceability_weight; entailment_weight; gate_threshold; combined_parameters,no
+run_cc37fae04a772d72,qwen,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_cea84eca5af08e21,qwen,Co-Ni-Mn-Cu-Zn,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_dbdf123b0d47f240,gpt,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_dfe4e7ab7feb5520,gemini,Fe-Co-Ni-Mn-Zn,supported,flagged_insufficient; supported,11,7,0.6363636363636364,source_strong_discount; entailment_strong_discount; gate_strict; all_strict,source_weight; entailment_weight; gate_threshold; combined_parameters,no
+run_e031b877f070eb35,deepseek,Fe-Co-Ni-Mn-Cu,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_e78a48b951b2ee6e,deepseek,Fe-Co-Ni-Cu-Zn,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_e7c1abb4133eacd1,deepseek,Fe-Ni-Mn-Cu-Zn,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_ed4997cc40ec46a3,deepseek,Fe-Co-Ni-Mn-Cu,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_f320e51e82599883,deepseek,Fe-Co-Ni-Cu-Zn,flagged_insufficient,flagged_insufficient,11,11,1.0,,,yes
+run_ff292d61b6376df8,gemini,Fe-Co-Ni-Mn-Zn,flagged_insufficient,flagged_insufficient; supported,11,10,0.9090909090909091,all_lenient,combined_parameters,no

@@ -1,0 +1,426 @@
+{
+  "run_id": "uq_reference",
+  "repeatability_sd_floor": 0.0052554733373883595,
+  "repeatability_rows": 5,
+  "repeatability_source": {
+    "path": "MachineLearning/Theory-experiment_hybrid_model/NN/uncertainty/input/replicate_experiment.xlsx",
+    "sheet": "1",
+    "replicate_columns": [
+      "E10_rep1",
+      "E10_rep2",
+      "E10_rep3"
+    ]
+  },
+  "descriptor_uncertainty": {
+    "mode": "global",
+    "descriptor_input_space": "physical",
+    "fixed_second_stage_model_count": 250,
+    "propagation_method": "native complete descriptor setting vectors; no Monte Carlo perturbation",
+    "setting_treatment": "all evaluated settings receive equal weight within each source group",
+    "group_aggregation": "RMS of propagated E10 sample standard deviations",
+    "two_setting_treatment": "two-setting E10 sample SD = absolute E10 difference / sqrt(2)",
+    "source_sigma_combination": "quadrature of five source-level propagated E10 variances",
+    "sigma_descriptor_global_V": 0.07045520950344351,
+    "maximum_delta_usage": "absolute sensitivity audit only; not added separately to sigma_total",
+    "propagation": "global constant assigned to all grid and OOF points",
+    "contribution_definition": "source propagated E10 variance divided by sigma_descriptor squared",
+    "pretrain_RMSE_usage": "not added to descriptor uncertainty; first-stage training variability is represented within sigma_ML_epi",
+    "source_paths": {
+      "md": "MachineLearning/Theory-experiment_hybrid_model/NN/uncertainty/input/md_all_compositions_properties.xlsx",
+      "single_site": [
+        "MachineLearning/Theory-experiment_hybrid_model/NN/uncertainty/input/single_site_results_Co_Ni-Co-Mn-Mn-Mn.xlsx",
+        "MachineLearning/Theory-experiment_hybrid_model/NN/uncertainty/input/single_site_results_Fe_Co-Zn-Fe-Ni-Mn.xlsx"
+      ]
+    },
+    "source_sheets": {
+      "temperature": "temperature",
+      "force_field": "force_field",
+      "functional": "sheet2_functional",
+      "slab_size": "sheet3_big_slab",
+      "second_shell": "sheet4_second_shell"
+    },
+    "source_setting_counts": [
+      {
+        "source": "force_field",
+        "group_id": "6:18:9:6:21",
+        "setting_count": 2
+      },
+      {
+        "source": "functional",
+        "group_id": "Co_Ni-Co-Mn-Mn-Mn",
+        "setting_count": 4
+      },
+      {
+        "source": "functional",
+        "group_id": "Fe_Co-Zn-Fe-Ni-Mn",
+        "setting_count": 4
+      },
+      {
+        "source": "second_shell",
+        "group_id": "Co_Ni-Co-Mn-Mn-Mn",
+        "setting_count": 5
+      },
+      {
+        "source": "second_shell",
+        "group_id": "Fe_Co-Zn-Fe-Ni-Mn",
+        "setting_count": 5
+      },
+      {
+        "source": "slab_size",
+        "group_id": "Co_Ni-Co-Mn-Mn-Mn",
+        "setting_count": 2
+      },
+      {
+        "source": "slab_size",
+        "group_id": "Fe_Co-Zn-Fe-Ni-Mn",
+        "setting_count": 2
+      },
+      {
+        "source": "temperature",
+        "group_id": "12:18:12:12:6",
+        "setting_count": 3
+      },
+      {
+        "source": "temperature",
+        "group_id": "12:18:6:6:18",
+        "setting_count": 3
+      },
+      {
+        "source": "temperature",
+        "group_id": "6:18:18:12:6",
+        "setting_count": 3
+      },
+      {
+        "source": "temperature",
+        "group_id": "6:18:9:6:21",
+        "setting_count": 3
+      },
+      {
+        "source": "temperature",
+        "group_id": "9:15:15:3:18",
+        "setting_count": 3
+      }
+    ],
+    "source_group_detail": [
+      {
+        "source": "temperature",
+        "group_id": "12:18:12:12:6",
+        "setting_count": 3,
+        "E10_mean_V": 1.46021564801534,
+        "E10_sample_sd_V": 0.0033403379944277473,
+        "E10_min_V": 1.4580624103546143,
+        "E10_max_V": 1.4640636444091797,
+        "max_abs_E10_change_V": 0.00600123405456543
+      },
+      {
+        "source": "temperature",
+        "group_id": "12:18:6:6:18",
+        "setting_count": 3,
+        "E10_mean_V": 1.4840708176294963,
+        "E10_sample_sd_V": 0.001413789659180379,
+        "E10_min_V": 1.482599139213562,
+        "E10_max_V": 1.4854185581207275,
+        "max_abs_E10_change_V": 0.0028194189071655273
+      },
+      {
+        "source": "temperature",
+        "group_id": "6:18:18:12:6",
+        "setting_count": 3,
+        "E10_mean_V": 1.4515070517857869,
+        "E10_sample_sd_V": 0.0052056925588403495,
+        "E10_min_V": 1.4482358694076538,
+        "E10_max_V": 1.457509994506836,
+        "max_abs_E10_change_V": 0.009274125099182129
+      },
+      {
+        "source": "temperature",
+        "group_id": "6:18:9:6:21",
+        "setting_count": 3,
+        "E10_mean_V": 1.5319639841715496,
+        "E10_sample_sd_V": 0.0027515218779166598,
+        "E10_min_V": 1.5287960767745972,
+        "E10_max_V": 1.5337580442428589,
+        "max_abs_E10_change_V": 0.004961967468261719
+      },
+      {
+        "source": "temperature",
+        "group_id": "9:15:15:3:18",
+        "setting_count": 3,
+        "E10_mean_V": 1.5430576006571453,
+        "E10_sample_sd_V": 0.00020896981569569787,
+        "E10_min_V": 1.5429136753082275,
+        "E10_max_V": 1.543297290802002,
+        "max_abs_E10_change_V": 0.00038361549377441406
+      },
+      {
+        "source": "force_field",
+        "group_id": "6:18:9:6:21",
+        "setting_count": 2,
+        "E10_mean_V": 1.5287024974822998,
+        "E10_sample_sd_V": 0.006555352229990414,
+        "E10_min_V": 1.5240671634674072,
+        "E10_max_V": 1.5333378314971924,
+        "max_abs_E10_change_V": 0.009270668029785156
+      },
+      {
+        "source": "functional",
+        "group_id": "Co_Ni-Co-Mn-Mn-Mn",
+        "setting_count": 4,
+        "E10_mean_V": 2.0064093470573425,
+        "E10_sample_sd_V": 0.04996410744934857,
+        "E10_min_V": 1.9602066278457642,
+        "E10_max_V": 2.061272144317627,
+        "max_abs_E10_change_V": 0.10106551647186279
+      },
+      {
+        "source": "slab_size",
+        "group_id": "Co_Ni-Co-Mn-Mn-Mn",
+        "setting_count": 2,
+        "E10_mean_V": 2.0239248275756836,
+        "E10_sample_sd_V": 0.01713825730368186,
+        "E10_min_V": 2.0118062496185303,
+        "E10_max_V": 2.036043405532837,
+        "max_abs_E10_change_V": 0.02423715591430664
+      },
+      {
+        "source": "second_shell",
+        "group_id": "Co_Ni-Co-Mn-Mn-Mn",
+        "setting_count": 5,
+        "E10_mean_V": 2.0406704902648927,
+        "E10_sample_sd_V": 0.023341580744977067,
+        "E10_min_V": 2.008922576904297,
+        "E10_max_V": 2.073286294937134,
+        "max_abs_E10_change_V": 0.06436371803283691
+      },
+      {
+        "source": "functional",
+        "group_id": "Fe_Co-Zn-Fe-Ni-Mn",
+        "setting_count": 4,
+        "E10_mean_V": 1.913177490234375,
+        "E10_sample_sd_V": 0.06391744680852014,
+        "E10_min_V": 1.8483517169952393,
+        "E10_max_V": 2.001384973526001,
+        "max_abs_E10_change_V": 0.15303325653076172
+      },
+      {
+        "source": "slab_size",
+        "group_id": "Fe_Co-Zn-Fe-Ni-Mn",
+        "setting_count": 2,
+        "E10_mean_V": 1.8901561498641968,
+        "E10_sample_sd_V": 0.016187592988670136,
+        "E10_min_V": 1.8787097930908203,
+        "E10_max_V": 1.9016025066375732,
+        "max_abs_E10_change_V": 0.02289271354675293
+      },
+      {
+        "source": "second_shell",
+        "group_id": "Fe_Co-Zn-Fe-Ni-Mn",
+        "setting_count": 5,
+        "E10_mean_V": 1.9663212776184082,
+        "E10_sample_sd_V": 0.046263810597335385,
+        "E10_min_V": 1.9016025066375732,
+        "E10_max_V": 2.0244855880737305,
+        "max_abs_E10_change_V": 0.12288308143615723
+      }
+    ],
+    "source_contribution": [
+      {
+        "source": "functional",
+        "source_display": "DFT functional",
+        "group_count": 2,
+        "setting_count_total": 8,
+        "propagated_E10_sigma_V": 0.05736659323914072,
+        "propagated_E10_variance_V2": 0.003290926019865026,
+        "relative_contribution_to_sigma_desc_variance_pct": 66.29669797857227
+      },
+      {
+        "source": "slab_size",
+        "source_display": "Slab size",
+        "group_count": 2,
+        "setting_count_total": 4,
+        "propagated_E10_sigma_V": 0.01666970350927165,
+        "propagated_E10_variance_V2": 0.00027787901508702356,
+        "relative_contribution_to_sigma_desc_variance_pct": 5.597956631842823
+      },
+      {
+        "source": "second_shell",
+        "source_display": "Second coordination shell",
+        "group_count": 2,
+        "setting_count_total": 10,
+        "propagated_E10_sigma_V": 0.03664129884884273,
+        "propagated_E10_variance_V2": 0.0013425847813302034,
+        "relative_contribution_to_sigma_desc_variance_pct": 27.04677565560304
+      },
+      {
+        "source": "temperature",
+        "source_display": "MD temperature/time",
+        "group_count": 5,
+        "setting_count_total": 15,
+        "propagated_E10_sigma_V": 0.0030942021641487704,
+        "propagated_E10_variance_V2": 9.574087032622935e-06,
+        "relative_contribution_to_sigma_desc_variance_pct": 0.19287287304270692
+      },
+      {
+        "source": "force_field",
+        "source_display": "Force field",
+        "group_count": 1,
+        "setting_count_total": 2,
+        "propagated_E10_sigma_V": 0.006555352229990414,
+        "propagated_E10_variance_V2": 4.2972642859240295e-05,
+        "relative_contribution_to_sigma_desc_variance_pct": 0.8656968609391441
+      }
+    ],
+    "max_delta_sensitivity_by_source": [
+      {
+        "source": "force_field",
+        "min": 0.009270668029785156,
+        "median": 0.009270668029785156,
+        "max": 0.009270668029785156
+      },
+      {
+        "source": "functional",
+        "min": 0.10106551647186279,
+        "median": 0.12704938650131226,
+        "max": 0.15303325653076172
+      },
+      {
+        "source": "second_shell",
+        "min": 0.06436371803283691,
+        "median": 0.09362339973449707,
+        "max": 0.12288308143615723
+      },
+      {
+        "source": "slab_size",
+        "min": 0.02289271354675293,
+        "median": 0.023564934730529785,
+        "max": 0.02423715591430664
+      },
+      {
+        "source": "temperature",
+        "min": 0.00038361549377441406,
+        "median": 0.004961967468261719,
+        "max": 0.009274125099182129
+      }
+    ],
+    "output_workbook": "MachineLearning/Theory-experiment_hybrid_model/NN/uncertainty/result/descriptor_error_propagation.xlsx",
+    "directional_sensitivity_reporting": "Signed slab-size and force-field E10 differences are reported separately; only their sample-SD magnitudes enter sigma_descriptor."
+  },
+  "empirical_residual_proxy_method": "max(abs_residual^2 - sigma_ML_epi_oof^2 - sigma_descriptor_oof^2, 0), then apply pooled repeatability SD floor",
+  "q0.95": 0.9999999999876634,
+  "q0.95_method": "OOF standardized-residual conformal-style empirical calibration; no strict finite-sample conformal guarantee is claimed because OOF residuals are used instead of an independent calibration set.",
+  "q0.95_rank": 103,
+  "q0.95_score_count": 107,
+  "benchmark": {
+    "threshold_V": 1.424,
+    "source": "candidate_benchmark_E10_V",
+    "high_potential_criterion": "PI95_lower < candidate_benchmark_E10_V"
+  },
+  "epistemic_threshold_summary": {
+    "run_id": "uq_reference",
+    "method": "OOF risk-coverage calibration within AD-in samples using repeated CV seed ensemble sigma.",
+    "N_total_oof": 107,
+    "N_AD_in": 102,
+    "oof_predictions_per_experiment": 25,
+    "threshold_min": 0.002513200900322649,
+    "accepted_count_at_threshold_min": 9,
+    "coverage_at_threshold_min": 0.08823529411764706,
+    "risk_at_threshold_min": 0.017942745865715884,
+    "risk_min": 0.017942745865715884,
+    "SE_min": 0.007393417261253113,
+    "tau_epi": 0.01501321209930893,
+    "coverage_at_tau_epi": 1.0,
+    "risk_at_tau_epi": 0.023452453011157476,
+    "risk_all_AD_in": 0.023452453011157476,
+    "risk_at_tau_minus_risk_min": 0.005509707145441592,
+    "risk_at_tau_minus_risk_min_mV": 5.509707145441592,
+    "risk_all_AD_in_minus_risk_min": 0.005509707145441592,
+    "risk_all_AD_in_minus_risk_min_mV": 5.509707145441592,
+    "risk_all_AD_in_within_one_SE": true,
+    "SE_min_over_risk_min": 0.412056065252537,
+    "sigma_threshold_transferability": {
+      "tau_epi": 0.01501321209930893,
+      "oof_AD_in_sigma_ML_epi_oof": {
+        "count": 102,
+        "min": 0.001685005059097891,
+        "Q25": 0.003563215471950394,
+        "median": 0.005435334095120344,
+        "Q75": 0.007731593649685975,
+        "Q90": 0.010723444606274259,
+        "Q95": 0.01118164911597288,
+        "max": 0.01501321209930893
+      },
+      "grid_AD_in_sigma_ML_epi": {
+        "count": 414478,
+        "min": 0.002262974856421351,
+        "Q25": 0.004931436036713421,
+        "median": 0.00637368462048471,
+        "Q75": 0.008880665758624673,
+        "Q90": 0.011924557667225602,
+        "Q95": 0.014012521551921939,
+        "max": 0.02943612076342106
+      },
+      "grid_AD_out_sigma_ML_epi": {
+        "count": 138923,
+        "min": 0.003090416314080358,
+        "Q25": 0.005951778031885624,
+        "median": 0.008516490459442139,
+        "Q75": 0.012446389999240635,
+        "Q90": 0.016720218956470488,
+        "Q95": 0.018864098750054837,
+        "max": 0.03391556069254875
+      },
+      "fraction_grid_sigma_le_tau_epi": 0.9356741314164593,
+      "fraction_AD_in_grid_sigma_le_tau_epi": 0.9655783901678738,
+      "fraction_AD_out_grid_sigma_le_tau_epi": 0.8464545107721544,
+      "min_grid_sigma_AD_in_gt_tau_epi": false,
+      "median_grid_AD_in_over_median_oof_AD_in": 1.1726389783853002
+    }
+  },
+  "accepted_by_oof_calibration_counts": {
+    "True": 400211,
+    "False": 153190
+  },
+  "sigma_ML_epi_quantiles": {
+    "0.25": 0.005125598050653934,
+    "0.5": 0.006763617042452097,
+    "0.75": 0.009699796326458454,
+    "0.95": 0.01586055755615234
+  },
+  "sigma_emp_residual_quantiles": {
+    "0.25": 0.0052554733373883595,
+    "0.5": 0.0052554733373883595,
+    "0.75": 0.0052554733373883595,
+    "0.95": 0.02040467624628083
+  },
+  "sigma_descriptor_quantiles": {
+    "0.25": 0.07045520950344351,
+    "0.5": 0.07045520950344351,
+    "0.75": 0.07045520950344351,
+    "0.95": 0.07045520950344351
+  },
+  "sigma_total_quantiles": {
+    "0.25": 0.07084284256885053,
+    "0.5": 0.07102579849980141,
+    "0.75": 0.07189427542595911,
+    "0.95": 0.07451259034465718
+  },
+  "variance_fraction_ML_epi_quantiles": {
+    "0.25": 0.005213409906159787,
+    "0.5": 0.00898613538401939,
+    "0.75": 0.01814729404157741,
+    "0.95": 0.046336564980138675
+  },
+  "variance_fraction_descriptor_quantiles": {
+    "0.25": 0.9603678195233439,
+    "0.5": 0.9839974465059337,
+    "0.75": 0.9890864753807316,
+    "0.95": 0.9914620056609784
+  },
+  "variance_fraction_emp_residual_quantiles": {
+    "0.25": 0.005463333753045268,
+    "0.5": 0.005499626161029424,
+    "0.75": 0.005516595500934066,
+    "0.95": 0.07504403465703759
+  },
+  "variance_fraction_definition": "component variance divided by sigma_total squared; three fractions sum to 1 for every grid point"
+}

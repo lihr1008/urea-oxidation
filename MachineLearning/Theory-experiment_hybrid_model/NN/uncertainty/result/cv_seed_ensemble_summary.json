@@ -1,0 +1,12 @@
+{
+  "run_id": "uq_reference",
+  "n_repeats": 5,
+  "n_splits": 10,
+  "seed_per_fold": 5,
+  "total_models": 250,
+  "oof_predictions_per_experiment": 25,
+  "grid_rows": 553401,
+  "method": "Repeated 10-fold CV seed ensemble; no full-data seed ensemble is trained.",
+  "model_weights_included_in_repository": false,
+  "full_grid_seed_predictions_included_in_repository": false
+}

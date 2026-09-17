@@ -1,0 +1,780 @@
+{
+  "corpus": [
+    {
+      "normalized_text_sha256": "e1e179da28a761cf7703d1f92fb8ca04bac67ea797f524ef1f43e2158cc3eeb7",
+      "relative_path": "Deepsearcher/data/PBA_1-1000.txt"
+    },
+    {
+      "normalized_text_sha256": "8f3d9151c16b43e588a7af55481198f495c21074a00956e0043ffb6e7007a5d6",
+      "relative_path": "Deepsearcher/data/PBA_1001-2000.txt"
+    },
+    {
+      "normalized_text_sha256": "95f554f203cde299e724723179aca78bb590ab3a4e791c89f1c011eb5b1b8892",
+      "relative_path": "Deepsearcher/data/PBA_2001-3000.txt"
+    },
+    {
+      "normalized_text_sha256": "0d3e10ad57bfba7c69debc6641d79cca39ad659ed006ef41e584ca2bac38bfd1",
+      "relative_path": "Deepsearcher/data/PBA_3001-4000.txt"
+    },
+    {
+      "normalized_text_sha256": "111257e08cfd024e0583945677d807f522dad7503ba95195fb075c8e4ea791e1",
+      "relative_path": "Deepsearcher/data/UOR_1-1000.txt"
+    },
+    {
+      "normalized_text_sha256": "8a8dae4ec20d2b7b6c3b75be2c375b88a43ed8a001f16c39569df2a072e53139",
+      "relative_path": "Deepsearcher/data/UOR_1001-2000.txt"
+    },
+    {
+      "normalized_text_sha256": "02be94aabd5fada664a30dc1e4c699a1291ea37e8171dd657c0cc948419575c7",
+      "relative_path": "Deepsearcher/data/UOR_2001-3000.txt"
+    },
+    {
+      "normalized_text_sha256": "18c7191c4cd1773c802e5107756ea34e673711d4708b116d6687cff37dbea7c2",
+      "relative_path": "Deepsearcher/data/UOR_3001-4000.txt"
+    },
+    {
+      "normalized_text_sha256": "83e2685fc45f6fef7467fc3066916915a4c0a419d867999047c1fc726a0e61e2",
+      "relative_path": "Deepsearcher/data/UOR_4001-5000.txt"
+    },
+    {
+      "normalized_text_sha256": "1d91d6aec3770be5cc0802b9f71ebe04ef3f78573627b83c46c16049969f396f",
+      "relative_path": "Deepsearcher/data/UOR_5001-5056.txt"
+    }
+  ],
+  "frozen_inputs": {
+    "frozen_claims.csv": "5282bc2e9a1b4f0aceaeb50122c83ecca9182cc27fee0dc25826b42cb994253f",
+    "frozen_evidence.csv": "50e01fddf72401efc8fedfd18181588f4f3654c73cc357e57bac00d6c819be06",
+    "frozen_review_summary.json": "bfcce90ffcb68c905b8815ded491febb7d5a5a5ac39820a425fabd37091313b8",
+    "fusion_config.json": "dc2ab5d5ed42231f76d7d2c7aab0ff6f911e320cba9467935d17673f29028881"
+  },
+  "hash_algorithm": "SHA-256",
+  "runs": [
+    {
+      "candidate": "Fe-Co-Ni-Cu-Zn",
+      "model": "deepseek",
+      "pair_status": "exact_pair",
+      "record_id": "run_f320e51e82599883",
+      "relative_path": "Deepsearcher/result/elements/deepseek_result/Fe-Co-Ni-Cu-Zn_1.txt",
+      "sha256": "99cd05eb241782719c1e8facebb71852dff6f343851a378cf27afb00c73b8faf",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Cu-Zn",
+      "model": "deepseek",
+      "pair_status": "exact_pair",
+      "record_id": "run_e78a48b951b2ee6e",
+      "relative_path": "Deepsearcher/result/elements/deepseek_result/Fe-Co-Ni-Cu-Zn_2.txt",
+      "sha256": "3ff9509bca49ce5f2e7fb9b116a4ba57bd72981e97f792194a532b2d221346b6",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Cu",
+      "model": "deepseek",
+      "pair_status": "exact_pair",
+      "record_id": "run_e031b877f070eb35",
+      "relative_path": "Deepsearcher/result/elements/deepseek_result/Fe-Co-Ni-Mn-Cu_1.txt",
+      "sha256": "abc25417ec81482b5861189bca03dea80690d9084804f305453bbdc7dfec65e7",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Cu",
+      "model": "deepseek",
+      "pair_status": "exact_pair",
+      "record_id": "run_ed4997cc40ec46a3",
+      "relative_path": "Deepsearcher/result/elements/deepseek_result/Fe-Co-Ni-Mn-Cu_2.txt",
+      "sha256": "ae2d56923a2198af936bee492b00e0eb1b4997655adbcda9e9bb2677a1de7107",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Cu",
+      "model": "deepseek",
+      "pair_status": "exact_pair",
+      "record_id": "run_4c59c2c3497dce9e",
+      "relative_path": "Deepsearcher/result/elements/deepseek_result/Fe-Co-Ni-Mn-Cu_3.txt",
+      "sha256": "6aefeb2bb1252c0da9016a5360836401a3d4e3e0f6cb65c7a9dc9249287f5149",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "deepseek",
+      "pair_status": "exact_pair",
+      "record_id": "run_777dbcb559ff5378",
+      "relative_path": "Deepsearcher/result/elements/deepseek_result/Fe-Co-Ni-Mn-Zn_1.txt",
+      "sha256": "1b3f75fe61e753706088890d4f46edbd4a1411786112d0e3396fead6ceb26708",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "deepseek",
+      "pair_status": "exact_pair",
+      "record_id": "run_5ca33401d63c3d35",
+      "relative_path": "Deepsearcher/result/elements/deepseek_result/Fe-Co-Ni-Mn-Zn_2.txt",
+      "sha256": "9eb495cbf108437b31143c5a39fd85940510afa40339272bfc419fd3eedd88d6",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "deepseek",
+      "pair_status": "exact_pair",
+      "record_id": "run_0b5d48cea00b1796",
+      "relative_path": "Deepsearcher/result/elements/deepseek_result/Fe-Co-Ni-Mn-Zn_3.txt",
+      "sha256": "7b771a0df1f652172f530698b60e1ea944d2cfb5671ee837d4433ead22699eed",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "deepseek",
+      "pair_status": "exact_pair",
+      "record_id": "run_910853e06b9095bf",
+      "relative_path": "Deepsearcher/result/elements/deepseek_result/Fe-Co-Ni-Mn-Zn_4.txt",
+      "sha256": "ab1b35b0300678fe04ae9125558967c5f6b3928e07053ccd2d16f0814ab6f23e",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Ni-Mn-Cu-Zn",
+      "model": "deepseek",
+      "pair_status": "exact_pair",
+      "record_id": "run_e7c1abb4133eacd1",
+      "relative_path": "Deepsearcher/result/elements/deepseek_result/Fe-Ni-Mn-Cu-Zn_1.txt",
+      "sha256": "308d544181211c91aa9ee9e9fc7163359988046506a25a649055d7c6a89adcd7",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gemini",
+      "pair_status": "unique_pair",
+      "record_id": "run_dfe4e7ab7feb5520",
+      "relative_path": "Deepsearcher/result/elements/gemini_result/Fe-Co-Ni-Mn-Zn_1.txt",
+      "sha256": "9afa0db9ca620857abb57abd28e7cb56775f1a6866900a1776268b08728d4f38",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gemini",
+      "pair_status": "exact_pair",
+      "record_id": "run_ff292d61b6376df8",
+      "relative_path": "Deepsearcher/result/elements/gemini_result/Fe-Co-Ni-Mn-Zn_10.txt",
+      "sha256": "d03b9a03db67119fcf113502c6fa5ad5790d5ca073a44aa9c289df433f69b418",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gemini",
+      "pair_status": "unique_pair",
+      "record_id": "run_9750be7218796f0e",
+      "relative_path": "Deepsearcher/result/elements/gemini_result/Fe-Co-Ni-Mn-Zn_2.txt",
+      "sha256": "54f3b6816e64838e97153267245b4e8b1b6449e554ef2d149d44c96dd06983b4",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gemini",
+      "pair_status": "unique_pair",
+      "record_id": "run_7fd29e5e06251830",
+      "relative_path": "Deepsearcher/result/elements/gemini_result/Fe-Co-Ni-Mn-Zn_3.txt",
+      "sha256": "355b07b0e5dfdb3e67ecb36ff3ae6ae4ee33dd6f90b12d8d922df390d3dc17c5",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gemini",
+      "pair_status": "unique_pair",
+      "record_id": "run_af7ea8733bc97d35",
+      "relative_path": "Deepsearcher/result/elements/gemini_result/Fe-Co-Ni-Mn-Zn_4.txt",
+      "sha256": "9e467e5755f875d3d39c881fb68881da0872c7773921e29bfa1d8dfd1e807fa6",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gemini",
+      "pair_status": "unique_pair",
+      "record_id": "run_09cb718c41fd3a33",
+      "relative_path": "Deepsearcher/result/elements/gemini_result/Fe-Co-Ni-Mn-Zn_5.txt",
+      "sha256": "a6a3dc29fa739d425aa614a8c75d8f8c3dcc0b8815e1eda304aa2842dc3ba97b",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gemini",
+      "pair_status": "unique_pair",
+      "record_id": "run_020148402fc4a275",
+      "relative_path": "Deepsearcher/result/elements/gemini_result/Fe-Co-Ni-Mn-Zn_6.txt",
+      "sha256": "0fe997d317cf2e313601bd2141eb928c209704d6a0bdbd71092a6bce4325093e",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gemini",
+      "pair_status": "exact_pair",
+      "record_id": "run_5bd3e94ad1b2be23",
+      "relative_path": "Deepsearcher/result/elements/gemini_result/Fe-Co-Ni-Mn-Zn_7.txt",
+      "sha256": "daaa49e1565f3f05f3880e52d2be040fd47fab6fae948e186f11ca47cff39fe1",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gemini",
+      "pair_status": "exact_pair",
+      "record_id": "run_94b6811a613c1128",
+      "relative_path": "Deepsearcher/result/elements/gemini_result/Fe-Co-Ni-Mn-Zn_8.txt",
+      "sha256": "10d95c4b9cb5657712ff2fc788e9d37a3e4715346a4988d2868808b33af1b729",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gemini",
+      "pair_status": "exact_pair",
+      "record_id": "run_9a1f52cb9067d9cb",
+      "relative_path": "Deepsearcher/result/elements/gemini_result/Fe-Co-Ni-Mn-Zn_9.txt",
+      "sha256": "0c6940eef9e5652c7b254d59a3e41e4f066b498ef95cc4895c76c322306ded7e",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Cu-Zn",
+      "model": "gpt",
+      "pair_status": "unique_pair",
+      "record_id": "run_cb003639c449e5af",
+      "relative_path": "Deepsearcher/result/elements/gpt_result/Fe-Co-Ni-Cu-Zn_1.txt",
+      "sha256": "af493243ee247f883aa6d20dc83f82f6a4991027a375d63f0858ceaaf2daebdd",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Cu-Zn",
+      "model": "gpt",
+      "pair_status": "unique_pair",
+      "record_id": "run_6e30d5d8c6193e21",
+      "relative_path": "Deepsearcher/result/elements/gpt_result/Fe-Co-Ni-Cu-Zn_2.txt",
+      "sha256": "65a7022aff53eace5cdf92cc1e60eeb6f0f52db0035ef630da403d43200b7f90",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gpt",
+      "pair_status": "unique_pair",
+      "record_id": "run_bcaadea5c838c750",
+      "relative_path": "Deepsearcher/result/elements/gpt_result/Fe-Co-Ni-Mn-Zn_1.txt",
+      "sha256": "aea50f2b381607adbba43be97d4e720b509de87b0042f2e79aa5bfd0d73f6a66",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gpt",
+      "pair_status": "unique_pair",
+      "record_id": "run_51a24a9a75df8a5a",
+      "relative_path": "Deepsearcher/result/elements/gpt_result/Fe-Co-Ni-Mn-Zn_2.txt",
+      "sha256": "a648ab592ddb242dc975c1e11b0c241135e6640c3c66cd8f20ce824736620dbf",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gpt",
+      "pair_status": "unique_pair",
+      "record_id": "run_792c4b213139c5a4",
+      "relative_path": "Deepsearcher/result/elements/gpt_result/Fe-Co-Ni-Mn-Zn_3.txt",
+      "sha256": "837568fe0c45c7a39230459a958b670645280731c03dc807c327caa89cdc04b2",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gpt",
+      "pair_status": "exact_pair",
+      "record_id": "run_c0e9ba95a285f559",
+      "relative_path": "Deepsearcher/result/elements/gpt_result/Fe-Co-Ni-Mn-Zn_4.txt",
+      "sha256": "34d471257e1f8dad919aeb0ac8878d586b012bf65fbd97b77441ddca8e71051f",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gpt",
+      "pair_status": "exact_pair",
+      "record_id": "run_1edd3c414c7f50b3",
+      "relative_path": "Deepsearcher/result/elements/gpt_result/Fe-Co-Ni-Mn-Zn_5.txt",
+      "sha256": "64d844e45bcb2a90866b4cd53df65df9de36cfe9e9d7897b22d6febca9b83ebb",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gpt",
+      "pair_status": "unique_pair",
+      "record_id": "run_052fbddb7e7b0390",
+      "relative_path": "Deepsearcher/result/elements/gpt_result/Fe-Co-Ni-Mn-Zn_6.txt",
+      "sha256": "cf6519499606a499cc1cb014326a4adf559d5ae09eb3f50bc1f9fa96eb57f03b",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gpt",
+      "pair_status": "unique_pair",
+      "record_id": "run_dbdf123b0d47f240",
+      "relative_path": "Deepsearcher/result/elements/gpt_result/Fe-Co-Ni-Mn-Zn_7.txt",
+      "sha256": "86df6aaa6b4f9ee4a0e09c9a5cb55b1d897839e3b7b1ce05a589bbc96c905ce6",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Ni-Mn-Cu-Zn",
+      "model": "gpt",
+      "pair_status": "unique_pair",
+      "record_id": "run_2360feb965109230",
+      "relative_path": "Deepsearcher/result/elements/gpt_result/Fe-Ni-Mn-Cu-Zn_1.txt",
+      "sha256": "4d1868101aceaad95b0884f2b5152a9449875266a2bc03a0661efbecf80a99a5",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Co-Ni-Mn-Cu-Zn",
+      "model": "qwen",
+      "pair_status": "exact_pair",
+      "record_id": "run_cea84eca5af08e21",
+      "relative_path": "Deepsearcher/result/elements/qwen_result/Co-Ni-Mn-Cu-Zn_1.txt",
+      "sha256": "5d55c84aa98d75a28f0e6a1aa2eb3119ab6d11be1e3c71b8ac87228535de867c",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "qwen",
+      "pair_status": "exact_pair",
+      "record_id": "run_1eccf111e49d796b",
+      "relative_path": "Deepsearcher/result/elements/qwen_result/Fe-Co-Ni-Mn-Zn_1.txt",
+      "sha256": "6fbb044bc42390c8668d7992e05b4dc2f0cadff610b98d42917d869d9ef6763b",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "qwen",
+      "pair_status": "exact_pair",
+      "record_id": "run_bb3c2ac72325b1b4",
+      "relative_path": "Deepsearcher/result/elements/qwen_result/Fe-Co-Ni-Mn-Zn_2.txt",
+      "sha256": "05aa70fc3ce667696d374f319c34a57926fda58464583bb6cb7fd84550398de9",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "qwen",
+      "pair_status": "manual_pair",
+      "record_id": "run_7fc47d306302f222",
+      "relative_path": "Deepsearcher/result/elements/qwen_result/Fe-Co-Ni-Mn-Zn_3.txt",
+      "sha256": "bfcb2fd26d1b1c28b5f8ddbdafb7e39829240451866fd7951c9645c14997ed1f",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "qwen",
+      "pair_status": "manual_pair",
+      "record_id": "run_b0e9fdfad699414b",
+      "relative_path": "Deepsearcher/result/elements/qwen_result/Fe-Co-Ni-Mn-Zn_4.txt",
+      "sha256": "bfcb2fd26d1b1c28b5f8ddbdafb7e39829240451866fd7951c9645c14997ed1f",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "qwen",
+      "pair_status": "exact_pair",
+      "record_id": "run_cc37fae04a772d72",
+      "relative_path": "Deepsearcher/result/elements/qwen_result/Fe-Co-Ni-Mn-Zn_5.txt",
+      "sha256": "a6ec43200e15910807e382d00cd1c627e3f7250223b55d4e996d35e75ff1987d",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "qwen",
+      "pair_status": "exact_pair",
+      "record_id": "run_b6e86c2e9b7b3255",
+      "relative_path": "Deepsearcher/result/elements/qwen_result/Fe-Co-Ni-Mn-Zn_6.txt",
+      "sha256": "63a000d6cba07a83daf570e6d462a2b1b9e20ba3b1a6b4e5605db2a1870311ce",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Cu-Zn",
+      "model": "qwen",
+      "pair_status": "exact_pair",
+      "record_id": "run_be36c9c685335d71",
+      "relative_path": "Deepsearcher/result/elements/qwen_result/Fe–Co–Ni–Cu-Zn_1.txt",
+      "sha256": "864073379daf6485b977afbeebae06079786d95a8ea88b52826076a26f82165d",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Cu",
+      "model": "qwen",
+      "pair_status": "exact_pair",
+      "record_id": "run_797f4ba4319fe372",
+      "relative_path": "Deepsearcher/result/elements/qwen_result/Fe–Co–Ni–Mn–Cu_1.txt",
+      "sha256": "559e2e3481d26d04e92523cf90e174fabf21c08c4327bd84c1d6f27a10f83689",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Cu",
+      "model": "qwen",
+      "pair_status": "exact_pair",
+      "record_id": "run_353c84909b3aca98",
+      "relative_path": "Deepsearcher/result/elements/qwen_result/Fe–Co–Ni–Mn–Cu_2.txt",
+      "sha256": "a6eb46d7485f5f5af49b9bb6fedb1caece8581f44a92c78e7766e78ae901fdb1",
+      "source_group": "with_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Cu",
+      "model": "deepseek",
+      "pair_status": "not_applicable",
+      "record_id": "run_205d7b9f9facf4d5",
+      "relative_path": "Deepsearcher/without_deepsearcher/deepseek_result/Fe-Co-Ni-Mn-Cu_1.txt",
+      "sha256": "37a6649ce8af9f38a08af7e9c430f33758b308f5cbfe45c08b1d2b80a0cf37bf",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Cu",
+      "model": "deepseek",
+      "pair_status": "not_applicable",
+      "record_id": "run_7f0e316d0acb43d6",
+      "relative_path": "Deepsearcher/without_deepsearcher/deepseek_result/Fe-Co-Ni-Mn-Cu_2.txt",
+      "sha256": "ebf5e118683a9d9bb086f686f220d27e06c7cbc3e6249ffca85a89a5766ab550",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Cu",
+      "model": "deepseek",
+      "pair_status": "not_applicable",
+      "record_id": "run_661e514959a15640",
+      "relative_path": "Deepsearcher/without_deepsearcher/deepseek_result/Fe-Co-Ni-Mn-Cu_3.txt",
+      "sha256": "20a3b8150a6e825824fe6b65134a572311b8d97e162d77b7d711ae4f7583c676",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Cu",
+      "model": "deepseek",
+      "pair_status": "not_applicable",
+      "record_id": "run_51f9f3d58dad3b4a",
+      "relative_path": "Deepsearcher/without_deepsearcher/deepseek_result/Fe-Co-Ni-Mn-Cu_4.txt",
+      "sha256": "777e3cf24c2cc601e390fa587c99e967a37a0564b86de36878a91a25dcf3fdd4",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Cu",
+      "model": "deepseek",
+      "pair_status": "not_applicable",
+      "record_id": "run_000b169ff19f7a69",
+      "relative_path": "Deepsearcher/without_deepsearcher/deepseek_result/Fe-Co-Ni-Mn-Cu_5.txt",
+      "sha256": "2eeb49d5ebcf855e16572906b50e9a1b802dcd9d1a0f1786efdf3256e5adb8ae",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Mo",
+      "model": "deepseek",
+      "pair_status": "not_applicable",
+      "record_id": "run_9408a72a542e6c34",
+      "relative_path": "Deepsearcher/without_deepsearcher/deepseek_result/Fe-Co-Ni-Mn-Mo_1.txt",
+      "sha256": "f7ee97383edb386b3c1149d2868eb3bd45f1131d829a35f31378130e7caa68ff",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Mo",
+      "model": "deepseek",
+      "pair_status": "not_applicable",
+      "record_id": "run_adf207df60ce2de0",
+      "relative_path": "Deepsearcher/without_deepsearcher/deepseek_result/Fe-Co-Ni-Mn-Mo_2.txt",
+      "sha256": "8b8424e74efe6fcab5f10b09eddc29908ee7f15cb49debad83679784c0bb9c91",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "deepseek",
+      "pair_status": "not_applicable",
+      "record_id": "run_54194e383e4bd73e",
+      "relative_path": "Deepsearcher/without_deepsearcher/deepseek_result/Fe-Co-Ni-Mn-Zn_1.txt",
+      "sha256": "08d294f98f2ce3e11d240487c4993480c4137636add9652e28b59f357e8b97e3",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "deepseek",
+      "pair_status": "not_applicable",
+      "record_id": "run_3eb3b20c07814d57",
+      "relative_path": "Deepsearcher/without_deepsearcher/deepseek_result/Fe-Co-Ni-Mn-Zn_2.txt",
+      "sha256": "79d42f88c6132aa7042cf4b7e70e02b0863ad2ef337aa23d26c64caa1c6de58e",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "deepseek",
+      "pair_status": "not_applicable",
+      "record_id": "run_20b21008e5b18823",
+      "relative_path": "Deepsearcher/without_deepsearcher/deepseek_result/Fe-Co-Ni-Mn-Zn_3.txt",
+      "sha256": "e77ece0a7d0bf4c7e7cd3b239169696105f377b41aa6b42af72278c74059a3f9",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gemini",
+      "pair_status": "not_applicable",
+      "record_id": "run_b542a20c21c2a572",
+      "relative_path": "Deepsearcher/without_deepsearcher/gemini_reslut/Fe-Co-Ni-Mn-Zn_1.txt",
+      "sha256": "4f41c47d91f514b9bd67ad2a2fe2629f5c453bb43208907d54113a4cd52e6890",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gemini",
+      "pair_status": "not_applicable",
+      "record_id": "run_5cc5338104fad76c",
+      "relative_path": "Deepsearcher/without_deepsearcher/gemini_reslut/Fe-Co-Ni-Mn-Zn_10.txt",
+      "sha256": "6c669e750963cd387a6cf048871afea0bc55312053806c1db373c30bc3a3df03",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gemini",
+      "pair_status": "not_applicable",
+      "record_id": "run_b53408cdd7ec6a09",
+      "relative_path": "Deepsearcher/without_deepsearcher/gemini_reslut/Fe-Co-Ni-Mn-Zn_2.txt",
+      "sha256": "726e993268e88884851f2871f3d8b750bb870e20c1d010936bd2fca75fffcc68",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gemini",
+      "pair_status": "not_applicable",
+      "record_id": "run_7f49eb4a63f5036d",
+      "relative_path": "Deepsearcher/without_deepsearcher/gemini_reslut/Fe-Co-Ni-Mn-Zn_3.txt",
+      "sha256": "a54d58230d67ecf4daa53fe9fd68d4d2128b5cc6731312ffc6a7328f91f1f92e",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gemini",
+      "pair_status": "not_applicable",
+      "record_id": "run_168640d603494b14",
+      "relative_path": "Deepsearcher/without_deepsearcher/gemini_reslut/Fe-Co-Ni-Mn-Zn_4.txt",
+      "sha256": "6c36058d62a30d19ebe7888bdc7e7156fa49bffb8643a1a7aaa4ee1ffd3275d7",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gemini",
+      "pair_status": "not_applicable",
+      "record_id": "run_659e9490c62446b7",
+      "relative_path": "Deepsearcher/without_deepsearcher/gemini_reslut/Fe-Co-Ni-Mn-Zn_5.txt",
+      "sha256": "1fa8c7fe99a681a0aa9d6a5f1e9b6b37c86c7e60a2bbfb186ff9791215bb1730",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gemini",
+      "pair_status": "not_applicable",
+      "record_id": "run_6d5acd65f10d89a8",
+      "relative_path": "Deepsearcher/without_deepsearcher/gemini_reslut/Fe-Co-Ni-Mn-Zn_6.txt",
+      "sha256": "b8c5082af0fd7c5842e57fb2b17ccbd64c9ff5ecefe1cf7705389f713d10d9dc",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gemini",
+      "pair_status": "not_applicable",
+      "record_id": "run_eb18d81d49632eed",
+      "relative_path": "Deepsearcher/without_deepsearcher/gemini_reslut/Fe-Co-Ni-Mn-Zn_7.txt",
+      "sha256": "df5b1f23626b90dff84475563aeaa8c4513d20d0f83fefd04e746b19c969e7f9",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gemini",
+      "pair_status": "not_applicable",
+      "record_id": "run_12fa5121c097307c",
+      "relative_path": "Deepsearcher/without_deepsearcher/gemini_reslut/Fe-Co-Ni-Mn-Zn_8.txt",
+      "sha256": "54325fb80ed83e9b5eae18aac8d08cd667468cbf2b4a3baf4fcd2fb9d62e8d3a",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gemini",
+      "pair_status": "not_applicable",
+      "record_id": "run_ddf6249f03984846",
+      "relative_path": "Deepsearcher/without_deepsearcher/gemini_reslut/Fe-Co-Ni-Mn-Zn_9.txt",
+      "sha256": "d278cb97e6cf1db5992893b0c363341fbcede2e497258a8fb0a61fc44993a23d",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Cu-Zn",
+      "model": "gpt",
+      "pair_status": "not_applicable",
+      "record_id": "run_fbfd8ea6fc27eb83",
+      "relative_path": "Deepsearcher/without_deepsearcher/gpt_result/Fe-Co-Ni-Cu-Zn_1.txt",
+      "sha256": "e6daea323fa619f928dabf03447c143807cb36c5db836719dba7bc29b6fe82c9",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gpt",
+      "pair_status": "not_applicable",
+      "record_id": "run_9d84a0e0ea9a34b8",
+      "relative_path": "Deepsearcher/without_deepsearcher/gpt_result/Fe-Co-Ni-Mn-Zn_1.txt",
+      "sha256": "e1e9920fbd47fc0a18f5e5159b5a86e577dc818a24564e08fc96890617072c09",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gpt",
+      "pair_status": "not_applicable",
+      "record_id": "run_d4e002116bcb7175",
+      "relative_path": "Deepsearcher/without_deepsearcher/gpt_result/Fe-Co-Ni-Mn-Zn_2.txt",
+      "sha256": "d50bf80d658bb4ca47d73c7ecf4b6a87976e9b13d63dd249528e26846c5643c4",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gpt",
+      "pair_status": "not_applicable",
+      "record_id": "run_fbd85e92f6f80805",
+      "relative_path": "Deepsearcher/without_deepsearcher/gpt_result/Fe-Co-Ni-Mn-Zn_3.txt",
+      "sha256": "48c3575ab71a7c41ba50ed40220e78970f02a653bc08f7cbeb55d8b432e38112",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gpt",
+      "pair_status": "not_applicable",
+      "record_id": "run_d2cd9f7e2ff961a8",
+      "relative_path": "Deepsearcher/without_deepsearcher/gpt_result/Fe-Co-Ni-Mn-Zn_4.txt",
+      "sha256": "6ccbd8f91860fca666afb80c730a7967f8663050e37ef480f95dc9beb6c66125",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "gpt",
+      "pair_status": "not_applicable",
+      "record_id": "run_95fb4685b483cee5",
+      "relative_path": "Deepsearcher/without_deepsearcher/gpt_result/Fe-Co-Ni-Mn-Zn_5.txt",
+      "sha256": "025742a1f07630acdadfb6ba7952abfe41a4f8adb0ce4809b2f02f67e23a8384",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Ni-Mn-Cu-Zn",
+      "model": "gpt",
+      "pair_status": "not_applicable",
+      "record_id": "run_28d0b7bb7fecbc2d",
+      "relative_path": "Deepsearcher/without_deepsearcher/gpt_result/Fe-Ni-Mn-Cu-Zn_1.txt",
+      "sha256": "52cf850fe8465a050a7570ea3f1d7ca00bb31f8ebafc0b8279b99ea5bbad81f8",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Ni-Mn-Cu-Zn",
+      "model": "gpt",
+      "pair_status": "not_applicable",
+      "record_id": "run_6330cfc44f941fea",
+      "relative_path": "Deepsearcher/without_deepsearcher/gpt_result/Fe-Ni-Mn-Cu-Zn_2.txt",
+      "sha256": "4698331da2eac521b91f244d1b782c13e2e78ad5a444ad885b7c7f94968f5c75",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Ni-Mn-Cu-Zn",
+      "model": "gpt",
+      "pair_status": "not_applicable",
+      "record_id": "run_787522f07e48e9b0",
+      "relative_path": "Deepsearcher/without_deepsearcher/gpt_result/Fe-Ni-Mn-Cu-Zn_3.txt",
+      "sha256": "4ecac9344cf2d11ef470ecc4ac2c493a3367de70294d3e6ebba2b9f902fdff16",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Ni-Mn-Cu-Zn",
+      "model": "gpt",
+      "pair_status": "not_applicable",
+      "record_id": "run_8bffab04bebcfc3f",
+      "relative_path": "Deepsearcher/without_deepsearcher/gpt_result/Fe-Ni-Mn-Cu-Zn_4.txt",
+      "sha256": "d0d304b404c5828480e7633163b0c3d09b33f27aedcb0c957c7f0b10658aa85f",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Cu",
+      "model": "qwen",
+      "pair_status": "not_applicable",
+      "record_id": "run_b005d030d0c83797",
+      "relative_path": "Deepsearcher/without_deepsearcher/qwen_result/Fe-Co-Ni-Mn-Cu_1.txt",
+      "sha256": "82f7f538044411aeae5af9b003f2ccc3532c9c703d30fd0e82c4f399112e15d3",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Cu",
+      "model": "qwen",
+      "pair_status": "not_applicable",
+      "record_id": "run_ab6d0e407f694f9f",
+      "relative_path": "Deepsearcher/without_deepsearcher/qwen_result/Fe-Co-Ni-Mn-Cu_2.txt",
+      "sha256": "19f7ebc3a209480250aeaf77ad90d93d0e8f23257087c04ac3924f5a429030a2",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Cu",
+      "model": "qwen",
+      "pair_status": "not_applicable",
+      "record_id": "run_5ed44a42626b0dad",
+      "relative_path": "Deepsearcher/without_deepsearcher/qwen_result/Fe-Co-Ni-Mn-Cu_3.txt",
+      "sha256": "157be9285a9e0116f79a5074cc7fa0f8e820b2bff3e8510661509d7f58796d4f",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Cu",
+      "model": "qwen",
+      "pair_status": "not_applicable",
+      "record_id": "run_166bd5e55866645a",
+      "relative_path": "Deepsearcher/without_deepsearcher/qwen_result/Fe-Co-Ni-Mn-Cu_4.txt",
+      "sha256": "ef9d61b258a984a7cc684d8f236a208013e6f334123db05f1abcb1091d2d146c",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Cu",
+      "model": "qwen",
+      "pair_status": "not_applicable",
+      "record_id": "run_d181dcf476b27edc",
+      "relative_path": "Deepsearcher/without_deepsearcher/qwen_result/Fe-Co-Ni-Mn-Cu_5.txt",
+      "sha256": "514b776539059e1ff42c7956c496f75be63406cc6b6dd0607054d0bf429c407a",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Cu",
+      "model": "qwen",
+      "pair_status": "not_applicable",
+      "record_id": "run_99a2b0b7e12893a5",
+      "relative_path": "Deepsearcher/without_deepsearcher/qwen_result/Fe-Co-Ni-Mn-Cu_6.txt",
+      "sha256": "c10c244e3157109adb27e07b3fe8877ad96309cbef57155296c06e4aeabe9f4a",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Cu",
+      "model": "qwen",
+      "pair_status": "not_applicable",
+      "record_id": "run_d2f46db22202c652",
+      "relative_path": "Deepsearcher/without_deepsearcher/qwen_result/Fe-Co-Ni-Mn-Cu_7.txt",
+      "sha256": "cad7b5492cc3550d4980a290a173783724918380b4e16f8f054f266f9ceac9d0",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Cu",
+      "model": "qwen",
+      "pair_status": "not_applicable",
+      "record_id": "run_efad73348dd6c200",
+      "relative_path": "Deepsearcher/without_deepsearcher/qwen_result/Fe-Co-Ni-Mn-Cu_8.txt",
+      "sha256": "2e141b3fc9ad1aed50349e98157123ae9129d08dfae7b8eefba9cc86c20ca137",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "qwen",
+      "pair_status": "not_applicable",
+      "record_id": "run_46ad6a0eb2393876",
+      "relative_path": "Deepsearcher/without_deepsearcher/qwen_result/Fe-Co-Ni-Mn-Zn_1.txt",
+      "sha256": "d1d17f65791fbb824a25703634a8cadf8853aca8fa7e80fc93cb2f8e6712af51",
+      "source_group": "without_deepsearcher"
+    },
+    {
+      "candidate": "Fe-Co-Ni-Mn-Zn",
+      "model": "qwen",
+      "pair_status": "not_applicable",
+      "record_id": "run_742cc79c241a375f",
+      "relative_path": "Deepsearcher/without_deepsearcher/qwen_result/Fe-Co-Ni-Mn-Zn_2.txt",
+      "sha256": "758209fc873dd439b37c05a174bde181a5bf0000363f9ecd0c247bfd2780c9a4",
+      "source_group": "without_deepsearcher"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "source_consistency": {
+    "assisted_output_count": 40,
+    "control_output_count": 40,
+    "corpus_partition_count": 10,
+    "corpus_reference_match_after_newline_normalization": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "uq_reference",
+  "grid_rows": 553401,
+  "experiment_rows": 107,
+  "ad_summary": {
+    "method": "ILR-5NN AD95",
+    "ad_k_neighbors": 5,
+    "ad_quantile": 0.95,
+    "dAD95_ilr": 0.7049590137789644
+  },
+  "grid_AD95_counts": {
+    "inside AD95": 414478,
+    "outside AD95": 138923
+  },
+  "experiment_AD95_counts": {
+    "inside AD95": 102,
+    "outside AD95": 5
+  }
+}

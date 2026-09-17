@@ -1,0 +1,294 @@
+{
+  "mode": "global",
+  "descriptor_input_space": "physical",
+  "fixed_second_stage_model_count": 250,
+  "propagation_method": "native complete descriptor setting vectors; no Monte Carlo perturbation",
+  "setting_treatment": "all evaluated settings receive equal weight within each source group",
+  "group_aggregation": "RMS of propagated E10 sample standard deviations",
+  "two_setting_treatment": "two-setting E10 sample SD = absolute E10 difference / sqrt(2)",
+  "source_sigma_combination": "quadrature of five source-level propagated E10 variances",
+  "sigma_descriptor_global_V": 0.07045520950344351,
+  "maximum_delta_usage": "absolute sensitivity audit only; not added separately to sigma_total",
+  "propagation": "global constant assigned to all grid and OOF points",
+  "contribution_definition": "source propagated E10 variance divided by sigma_descriptor squared",
+  "pretrain_RMSE_usage": "not added to descriptor uncertainty; first-stage training variability is represented within sigma_ML_epi",
+  "source_paths": {
+    "md": "MachineLearning/Theory-experiment_hybrid_model/NN/uncertainty/input/md_all_compositions_properties.xlsx",
+    "single_site": [
+      "MachineLearning/Theory-experiment_hybrid_model/NN/uncertainty/input/single_site_results_Co_Ni-Co-Mn-Mn-Mn.xlsx",
+      "MachineLearning/Theory-experiment_hybrid_model/NN/uncertainty/input/single_site_results_Fe_Co-Zn-Fe-Ni-Mn.xlsx"
+    ]
+  },
+  "source_sheets": {
+    "temperature": "temperature",
+    "force_field": "force_field",
+    "functional": "sheet2_functional",
+    "slab_size": "sheet3_big_slab",
+    "second_shell": "sheet4_second_shell"
+  },
+  "source_setting_counts": [
+    {
+      "source": "force_field",
+      "group_id": "6:18:9:6:21",
+      "setting_count": 2
+    },
+    {
+      "source": "functional",
+      "group_id": "Co_Ni-Co-Mn-Mn-Mn",
+      "setting_count": 4
+    },
+    {
+      "source": "functional",
+      "group_id": "Fe_Co-Zn-Fe-Ni-Mn",
+      "setting_count": 4
+    },
+    {
+      "source": "second_shell",
+      "group_id": "Co_Ni-Co-Mn-Mn-Mn",
+      "setting_count": 5
+    },
+    {
+      "source": "second_shell",
+      "group_id": "Fe_Co-Zn-Fe-Ni-Mn",
+      "setting_count": 5
+    },
+    {
+      "source": "slab_size",
+      "group_id": "Co_Ni-Co-Mn-Mn-Mn",
+      "setting_count": 2
+    },
+    {
+      "source": "slab_size",
+      "group_id": "Fe_Co-Zn-Fe-Ni-Mn",
+      "setting_count": 2
+    },
+    {
+      "source": "temperature",
+      "group_id": "12:18:12:12:6",
+      "setting_count": 3
+    },
+    {
+      "source": "temperature",
+      "group_id": "12:18:6:6:18",
+      "setting_count": 3
+    },
+    {
+      "source": "temperature",
+      "group_id": "6:18:18:12:6",
+      "setting_count": 3
+    },
+    {
+      "source": "temperature",
+      "group_id": "6:18:9:6:21",
+      "setting_count": 3
+    },
+    {
+      "source": "temperature",
+      "group_id": "9:15:15:3:18",
+      "setting_count": 3
+    }
+  ],
+  "source_group_detail": [
+    {
+      "source": "temperature",
+      "group_id": "12:18:12:12:6",
+      "setting_count": 3,
+      "E10_mean_V": 1.46021564801534,
+      "E10_sample_sd_V": 0.0033403379944277473,
+      "E10_min_V": 1.4580624103546143,
+      "E10_max_V": 1.4640636444091797,
+      "max_abs_E10_change_V": 0.00600123405456543
+    },
+    {
+      "source": "temperature",
+      "group_id": "12:18:6:6:18",
+      "setting_count": 3,
+      "E10_mean_V": 1.4840708176294963,
+      "E10_sample_sd_V": 0.001413789659180379,
+      "E10_min_V": 1.482599139213562,
+      "E10_max_V": 1.4854185581207275,
+      "max_abs_E10_change_V": 0.0028194189071655273
+    },
+    {
+      "source": "temperature",
+      "group_id": "6:18:18:12:6",
+      "setting_count": 3,
+      "E10_mean_V": 1.4515070517857869,
+      "E10_sample_sd_V": 0.0052056925588403495,
+      "E10_min_V": 1.4482358694076538,
+      "E10_max_V": 1.457509994506836,
+      "max_abs_E10_change_V": 0.009274125099182129
+    },
+    {
+      "source": "temperature",
+      "group_id": "6:18:9:6:21",
+      "setting_count": 3,
+      "E10_mean_V": 1.5319639841715496,
+      "E10_sample_sd_V": 0.0027515218779166598,
+      "E10_min_V": 1.5287960767745972,
+      "E10_max_V": 1.5337580442428589,
+      "max_abs_E10_change_V": 0.004961967468261719
+    },
+    {
+      "source": "temperature",
+      "group_id": "9:15:15:3:18",
+      "setting_count": 3,
+      "E10_mean_V": 1.5430576006571453,
+      "E10_sample_sd_V": 0.00020896981569569787,
+      "E10_min_V": 1.5429136753082275,
+      "E10_max_V": 1.543297290802002,
+      "max_abs_E10_change_V": 0.00038361549377441406
+    },
+    {
+      "source": "force_field",
+      "group_id": "6:18:9:6:21",
+      "setting_count": 2,
+      "E10_mean_V": 1.5287024974822998,
+      "E10_sample_sd_V": 0.006555352229990414,
+      "E10_min_V": 1.5240671634674072,
+      "E10_max_V": 1.5333378314971924,
+      "max_abs_E10_change_V": 0.009270668029785156
+    },
+    {
+      "source": "functional",
+      "group_id": "Co_Ni-Co-Mn-Mn-Mn",
+      "setting_count": 4,
+      "E10_mean_V": 2.0064093470573425,
+      "E10_sample_sd_V": 0.04996410744934857,
+      "E10_min_V": 1.9602066278457642,
+      "E10_max_V": 2.061272144317627,
+      "max_abs_E10_change_V": 0.10106551647186279
+    },
+    {
+      "source": "slab_size",
+      "group_id": "Co_Ni-Co-Mn-Mn-Mn",
+      "setting_count": 2,
+      "E10_mean_V": 2.0239248275756836,
+      "E10_sample_sd_V": 0.01713825730368186,
+      "E10_min_V": 2.0118062496185303,
+      "E10_max_V": 2.036043405532837,
+      "max_abs_E10_change_V": 0.02423715591430664
+    },
+    {
+      "source": "second_shell",
+      "group_id": "Co_Ni-Co-Mn-Mn-Mn",
+      "setting_count": 5,
+      "E10_mean_V": 2.0406704902648927,
+      "E10_sample_sd_V": 0.023341580744977067,
+      "E10_min_V": 2.008922576904297,
+      "E10_max_V": 2.073286294937134,
+      "max_abs_E10_change_V": 0.06436371803283691
+    },
+    {
+      "source": "functional",
+      "group_id": "Fe_Co-Zn-Fe-Ni-Mn",
+      "setting_count": 4,
+      "E10_mean_V": 1.913177490234375,
+      "E10_sample_sd_V": 0.06391744680852014,
+      "E10_min_V": 1.8483517169952393,
+      "E10_max_V": 2.001384973526001,
+      "max_abs_E10_change_V": 0.15303325653076172
+    },
+    {
+      "source": "slab_size",
+      "group_id": "Fe_Co-Zn-Fe-Ni-Mn",
+      "setting_count": 2,
+      "E10_mean_V": 1.8901561498641968,
+      "E10_sample_sd_V": 0.016187592988670136,
+      "E10_min_V": 1.8787097930908203,
+      "E10_max_V": 1.9016025066375732,
+      "max_abs_E10_change_V": 0.02289271354675293
+    },
+    {
+      "source": "second_shell",
+      "group_id": "Fe_Co-Zn-Fe-Ni-Mn",
+      "setting_count": 5,
+      "E10_mean_V": 1.9663212776184082,
+      "E10_sample_sd_V": 0.046263810597335385,
+      "E10_min_V": 1.9016025066375732,
+      "E10_max_V": 2.0244855880737305,
+      "max_abs_E10_change_V": 0.12288308143615723
+    }
+  ],
+  "source_contribution": [
+    {
+      "source": "functional",
+      "source_display": "DFT functional",
+      "group_count": 2,
+      "setting_count_total": 8,
+      "propagated_E10_sigma_V": 0.05736659323914072,
+      "propagated_E10_variance_V2": 0.003290926019865026,
+      "relative_contribution_to_sigma_desc_variance_pct": 66.29669797857227
+    },
+    {
+      "source": "slab_size",
+      "source_display": "Slab size",
+      "group_count": 2,
+      "setting_count_total": 4,
+      "propagated_E10_sigma_V": 0.01666970350927165,
+      "propagated_E10_variance_V2": 0.00027787901508702356,
+      "relative_contribution_to_sigma_desc_variance_pct": 5.597956631842823
+    },
+    {
+      "source": "second_shell",
+      "source_display": "Second coordination shell",
+      "group_count": 2,
+      "setting_count_total": 10,
+      "propagated_E10_sigma_V": 0.03664129884884273,
+      "propagated_E10_variance_V2": 0.0013425847813302034,
+      "relative_contribution_to_sigma_desc_variance_pct": 27.04677565560304
+    },
+    {
+      "source": "temperature",
+      "source_display": "MD temperature/time",
+      "group_count": 5,
+      "setting_count_total": 15,
+      "propagated_E10_sigma_V": 0.0030942021641487704,
+      "propagated_E10_variance_V2": 9.574087032622935e-06,
+      "relative_contribution_to_sigma_desc_variance_pct": 0.19287287304270692
+    },
+    {
+      "source": "force_field",
+      "source_display": "Force field",
+      "group_count": 1,
+      "setting_count_total": 2,
+      "propagated_E10_sigma_V": 0.006555352229990414,
+      "propagated_E10_variance_V2": 4.2972642859240295e-05,
+      "relative_contribution_to_sigma_desc_variance_pct": 0.8656968609391441
+    }
+  ],
+  "max_delta_sensitivity_by_source": [
+    {
+      "source": "force_field",
+      "min": 0.009270668029785156,
+      "median": 0.009270668029785156,
+      "max": 0.009270668029785156
+    },
+    {
+      "source": "functional",
+      "min": 0.10106551647186279,
+      "median": 0.12704938650131226,
+      "max": 0.15303325653076172
+    },
+    {
+      "source": "second_shell",
+      "min": 0.06436371803283691,
+      "median": 0.09362339973449707,
+      "max": 0.12288308143615723
+    },
+    {
+      "source": "slab_size",
+      "min": 0.02289271354675293,
+      "median": 0.023564934730529785,
+      "max": 0.02423715591430664
+    },
+    {
+      "source": "temperature",
+      "min": 0.00038361549377441406,
+      "median": 0.004961967468261719,
+      "max": 0.009274125099182129
+    }
+  ],
+  "output_workbook": "MachineLearning/Theory-experiment_hybrid_model/NN/uncertainty/result/descriptor_error_propagation.xlsx",
+  "directional_sensitivity_reporting": "Signed slab-size and force-field E10 differences are reported separately; only their sample-SD magnitudes enter sigma_descriptor."
+}

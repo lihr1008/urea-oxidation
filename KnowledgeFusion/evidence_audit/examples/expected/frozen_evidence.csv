@@ -1,0 +1,2 @@
+record_id,candidate,design_dimension,independent_source_id,source_packet_id,DOI,UT,publication_year,system_relevance,study_type,traceability,entailment,direction,semantic_review_multiplier,semantic_review_status,included_in_ds
+run_demo_001,Fe-Co-Ni-Mn-Zn,uor_activity,packet:source_demo_001,source_demo_001,,,,direct_PBA_UOR,experimental,partition_only,partial,support,1,human_accepted,yes

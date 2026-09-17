@@ -1,0 +1,212 @@
+<query> In an alkaline environment for the urea oxidation reaction, design a high-entropy Prussian blue analog catalyst composed of five transition metals. This catalyst should not only exhibit high catalytic activity and stability but also meet multiple criteria including low cost, ease of synthesis, environmental friendliness, and corrosion resistance. Among common metal combinations, considering the balance between catalytic performance and structural stability, and aiming to avoid certain metals that may pose higher costs or environmental concerns, a tentative introduction of a metal element with stable valence states and environmentally benign characteristics is proposed to optimize catalyst performance. Please analyze in detail the rationale behind the selection of each of the five transition metal elements, elaborating on their contributions in terms of catalytic activity, stability, synthetic feasibility, cost-effectiveness, and structural features. </query>
+
+<think> Break down the original query into new sub queries: ['What performance, durability, and sustainability criteria must a high-entropy Prussian blue analog (PBA) catalyst for alkaline urea oxidation meet, and what constraints (e.g., avoiding costly/toxic metals, ensuring corrosion resistance and ease of synthesis) should guide metal selection?', 'Which five transition metals (e.g., Ni, Co, Fe, Mn, Zn) are proposed for the PBA framework (A-site mixed divalent metals with Fe at the hexacyanoferrate B-site), and what is the detailed rationale for each metal’s contribution to catalytic activity, structural stability, synthetic feasibility, cost-effectiveness, and environmental profile?', 'How do high-entropy mixing and the PBA crystal chemistry (cyanide bridging, vacancies/hydration, mixed valence) modulate electronic structure, active-site diversity, defect engineering, and corrosion resistance to enhance alkaline UOR performance?', 'What scalable, environmentally benign synthesis and processing routes (e.g., aqueous co-precipitation, vacancy/hydration control, post-treatment) best realize the target composition and properties while maintaining low cost and robust stability in alkaline media?']</think>
+
+>> Iteration: 1
+
+<think> Perform search [What performance, durability, and sustainability criteria must a high-entropy Prussian blue analog (PBA) catalyst for alkaline urea oxidation meet, and what constraints (e.g., avoiding costly/toxic metals, ensuring corrosion resistance and ease of synthesis) should guide metal selection?] on the vector DB collection: deepsearcher </think>
+
+<search> Search [What performance, durability, and sustainability criteria must a high-entropy Prussian blue analog (PBA) catalyst for alkaline urea oxidation meet, and what constraints (e.g., avoiding costly/toxic metals, ensuring corrosion resistance and ease of synthesis) should guide metal selection?] in [deepsearcher]...  </search>
+
+<search> Accept 2 document chunk(s) from references: ['D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\data\\PBA_1-1000.txt'] </search>
+
+<think> Perform search [Which five transition metals (e.g., Ni, Co, Fe, Mn, Zn) are proposed for the PBA framework (A-site mixed divalent metals with Fe at the hexacyanoferrate B-site), and what is the detailed rationale for each metal’s contribution to catalytic activity, structural stability, synthetic feasibility, cost-effectiveness, and environmental profile?] on the vector DB collection: deepsearcher </think>
+
+<search> Search [Which five transition metals (e.g., Ni, Co, Fe, Mn, Zn) are proposed for the PBA framework (A-site mixed divalent metals with Fe at the hexacyanoferrate B-site), and what is the detailed rationale for each metal’s contribution to catalytic activity, structural stability, synthetic feasibility, cost-effectiveness, and environmental profile?] in [deepsearcher]...  </search>
+
+<search> Accept 3 document chunk(s) from references: ['D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\data\\PBA_1-1000.txt', 'D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\data\\PBA_1001-2000.txt'] </search>
+
+<think> Perform search [How do high-entropy mixing and the PBA crystal chemistry (cyanide bridging, vacancies/hydration, mixed valence) modulate electronic structure, active-site diversity, defect engineering, and corrosion resistance to enhance alkaline UOR performance?] on the vector DB collection: deepsearcher </think>
+
+<search> Search [How do high-entropy mixing and the PBA crystal chemistry (cyanide bridging, vacancies/hydration, mixed valence) modulate electronic structure, active-site diversity, defect engineering, and corrosion resistance to enhance alkaline UOR performance?] in [deepsearcher]...  </search>
+
+<search> Accept 1 document chunk(s) from references: ['D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\data\\PBA_1001-2000.txt'] </search>
+
+<think> Perform search [What scalable, environmentally benign synthesis and processing routes (e.g., aqueous co-precipitation, vacancy/hydration control, post-treatment) best realize the target composition and properties while maintaining low cost and robust stability in alkaline media?] on the vector DB collection: deepsearcher </think>
+
+<search> Search [What scalable, environmentally benign synthesis and processing routes (e.g., aqueous co-precipitation, vacancy/hydration control, post-treatment) best realize the target composition and properties while maintaining low cost and robust stability in alkaline media?] in [deepsearcher]...  </search>
+
+<search> No document chunk accepted from 'deepsearcher'! </search>
+
+<think> Reflecting on the search results... </think>
+
+<think> New search queries for next iteration: ['Nickel–iron Prussian blue analog urea oxidation alkaline electrocatalyst NiFe hexacyanoferrate', 'High-entropy Prussian blue analog Ni Co Fe Mn Zn for urea oxidation: activity stability corrosion resistance in KOH', 'Stability of Prussian blue analogs in alkaline electrolytes and cyanide leaching/environmental safety'] </think>
+
+>> Iteration: 2
+
+<think> Perform search [Nickel–iron Prussian blue analog urea oxidation alkaline electrocatalyst NiFe hexacyanoferrate] on the vector DB collection: deepsearcher </think>
+
+<search> Search [Nickel–iron Prussian blue analog urea oxidation alkaline electrocatalyst NiFe hexacyanoferrate] in [deepsearcher]...  </search>
+
+<search> Accept 4 document chunk(s) from references: ['D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\data\\PBA_1-1000.txt', 'D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\data\\PBA_1001-2000.txt', 'D:\\pythonProject\\program\\urea\\high entropy materials for urea oxidation\\Deepsearch\\data\\UOR_1-1000.txt'] </search>
+
+<think> Perform search [High-entropy Prussian blue analog Ni Co Fe Mn Zn for urea oxidation: activity stability corrosion resistance in KOH] on the vector DB collection: deepsearcher </think>
+
+<search> Search [High-entropy Prussian blue analog Ni Co Fe Mn Zn for urea oxidation: activity stability corrosion resistance in KOH] in [deepsearcher]...  </search>
+
+<search> No document chunk accepted from 'deepsearcher'! </search>
+
+<think> Perform search [Stability of Prussian blue analogs in alkaline electrolytes and cyanide leaching/environmental safety] on the vector DB collection: deepsearcher </think>
+
+<search> Search [Stability of Prussian blue analogs in alkaline electrolytes and cyanide leaching/environmental safety] in [deepsearcher]...  </search>
+
+<search> No document chunk accepted from 'deepsearcher'! </search>
+
+<think> Reflecting on the search results... </think>
+
+<think> New search queries for next iteration: ['High-entropy Prussian blue analogs for alkaline urea oxidation: Ni Co Fe Mn Zn mixed-metal hexacyanoferrate performance and stability', 'Prussian blue analog stability and corrosion resistance in alkaline KOH: impact of Zn2+ and Mn2+ incorporation; cyanide leaching/environmental safety', 'Redox mechanism in NiFe-based PBAs for UOR: Ni(II) retention, Co/Mn synergy, and active-site identification in multi-metal systems'] </think>
+
+>> Iteration: 3
+
+<think> Perform search [High-entropy Prussian blue analogs for alkaline urea oxidation: Ni Co Fe Mn Zn mixed-metal hexacyanoferrate performance and stability] on the vector DB collection: deepsearcher </think>
+
+<search> Search [High-entropy Prussian blue analogs for alkaline urea oxidation: Ni Co Fe Mn Zn mixed-metal hexacyanoferrate performance and stability] in [deepsearcher]...  </search>
+
+<search> No document chunk accepted from 'deepsearcher'! </search>
+
+<think> Perform search [Prussian blue analog stability and corrosion resistance in alkaline KOH: impact of Zn2+ and Mn2+ incorporation; cyanide leaching/environmental safety] on the vector DB collection: deepsearcher </think>
+
+<search> Search [Prussian blue analog stability and corrosion resistance in alkaline KOH: impact of Zn2+ and Mn2+ incorporation; cyanide leaching/environmental safety] in [deepsearcher]...  </search>
+
+<search> No document chunk accepted from 'deepsearcher'! </search>
+
+<think> Perform search [Redox mechanism in NiFe-based PBAs for UOR: Ni(II) retention, Co/Mn synergy, and active-site identification in multi-metal systems] on the vector DB collection: deepsearcher </think>
+
+<search> Search [Redox mechanism in NiFe-based PBAs for UOR: Ni(II) retention, Co/Mn synergy, and active-site identification in multi-metal systems] in [deepsearcher]...  </search>
+
+<search> No document chunk accepted from 'deepsearcher'! </search>
+
+<think> Reflecting on the search results... </think>
+
+<think> New search queries for next iteration: ['High-entropy Prussian blue analog urea oxidation catalyst Ni Co Fe Mn Zn in alkaline KOH: performance and stability', 'Zn2+ incorporation in NiFe Prussian blue analogs for alkaline urea electrolysis: structural stabilization, corrosion resistance, durability', 'Cyanide ligand stability and leaching of Prussian blue analogs under alkaline electrochemical conditions (KOH, UOR) and environmental safety'] </think>
+
+>> Iteration: 4
+
+<think> Perform search [High-entropy Prussian blue analog urea oxidation catalyst Ni Co Fe Mn Zn in alkaline KOH: performance and stability] on the vector DB collection: deepsearcher </think>
+
+<search> Search [High-entropy Prussian blue analog urea oxidation catalyst Ni Co Fe Mn Zn in alkaline KOH: performance and stability] in [deepsearcher]...  </search>
+
+<search> No document chunk accepted from 'deepsearcher'! </search>
+
+<think> Perform search [Zn2+ incorporation in NiFe Prussian blue analogs for alkaline urea electrolysis: structural stabilization, corrosion resistance, durability] on the vector DB collection: deepsearcher </think>
+
+<search> Search [Zn2+ incorporation in NiFe Prussian blue analogs for alkaline urea electrolysis: structural stabilization, corrosion resistance, durability] in [deepsearcher]...  </search>
+
+<search> No document chunk accepted from 'deepsearcher'! </search>
+
+<think> Perform search [Cyanide ligand stability and leaching of Prussian blue analogs under alkaline electrochemical conditions (KOH, UOR) and environmental safety] on the vector DB collection: deepsearcher </think>
+
+<search> Search [Cyanide ligand stability and leaching of Prussian blue analogs under alkaline electrochemical conditions (KOH, UOR) and environmental safety] in [deepsearcher]...  </search>
+
+<search> No document chunk accepted from 'deepsearcher'! </search>
+
+<think> Reflecting on the search results... </think>
+
+<think> New search queries for next iteration: ['High-entropy Prussian blue analog electrocatalyst for alkaline urea oxidation (UOR) using Ni Co Fe Mn Zn: activity, stability, and corrosion resistance in KOH', 'Zn2+ incorporation in NiFe Prussian blue analogs for alkaline UOR: role in structural stabilization, corrosion resistance, and durability', 'Cyanide ligand stability and leaching behavior of hexacyanoferrate (Prussian blue analog) catalysts under alkaline electrochemical UOR conditions'] </think>
+
+>> Iteration: 5
+
+<think> Perform search [High-entropy Prussian blue analog electrocatalyst for alkaline urea oxidation (UOR) using Ni Co Fe Mn Zn: activity, stability, and corrosion resistance in KOH] on the vector DB collection: deepsearcher </think>
+
+<search> Search [High-entropy Prussian blue analog electrocatalyst for alkaline urea oxidation (UOR) using Ni Co Fe Mn Zn: activity, stability, and corrosion resistance in KOH] in [deepsearcher]...  </search>
+
+<search> No document chunk accepted from 'deepsearcher'! </search>
+
+<think> Perform search [Zn2+ incorporation in NiFe Prussian blue analogs for alkaline UOR: role in structural stabilization, corrosion resistance, and durability] on the vector DB collection: deepsearcher </think>
+
+<search> Search [Zn2+ incorporation in NiFe Prussian blue analogs for alkaline UOR: role in structural stabilization, corrosion resistance, and durability] in [deepsearcher]...  </search>
+
+<search> No document chunk accepted from 'deepsearcher'! </search>
+
+<think> Perform search [Cyanide ligand stability and leaching behavior of hexacyanoferrate (Prussian blue analog) catalysts under alkaline electrochemical UOR conditions] on the vector DB collection: deepsearcher </think>
+
+<search> Search [Cyanide ligand stability and leaching behavior of hexacyanoferrate (Prussian blue analog) catalysts under alkaline electrochemical UOR conditions] in [deepsearcher]...  </search>
+
+<search> No document chunk accepted from 'deepsearcher'! </search>
+
+<think> Reflecting on the search results... </think>
+
+<think> No new search queries were generated. Exiting. </think>
+
+<think> Summarize answer from all 8 retrieved chunks... </think>
+
+
+==== FINAL ANSWER====
+
+Summary report: Five-metal high-entropy Prussian blue analog catalyst for alkaline urea oxidation (UOR), with detailed element selection rationale, structure–property relationships, synthesis approach, and stability/safety considerations
+
+Target composition and crystal chemistry
+- Framework: mixed-divalent A-site metals [(Ni, Co, Mn, Zn)] coordinated to N of cyanide; B-site hexacyanoferrate [Fe(CN)6] coordinated to C. Representative formula: (Ni,Co,Mn,Zn)3[Fe(CN)6]2·nH2O with controlled [Fe(CN)6] vacancies and crystal water.
+- Role of high-entropy mixing: Increasing configurational entropy across four A-site metals reduces lattice distortions and strain during redox cycling, improving mechanical integrity and cycle life. Evidence from high-entropy PBAs in batteries shows performance increases with entropy and quasi-zero-strain behavior during cycling; Ni and Zn act as structure stabilizers, while Mn, Fe, and Co contribute electrochemical activity.
+- Defect/hydration engineering: Minimizing [Fe(CN)6] vacancies enhances load-bearing capacity, ion transport, and long-term stability; appropriate crystal water content maintains framework flexibility and buffers volume changes. Studies on Cu–Fe PBAs confirm fewer vacancies improve rate capability and ultralong cycle life.
+
+Element-by-element rationale
+1) Nickel (Ni)
+- Catalytic activity: Ni is the primary UOR-active center in alkaline media. In Ni–Fe PBAs, in situ Raman shows Ni can maintain a stable divalent state (Ni(II)) for extended periods during initial UOR, indicating a unique active intermediate and robust catalytic behavior. The Ni–Fe bimetallic center substantially enhances urea electro-oxidation.
+- Stability and corrosion resistance: Under alkaline polarization, surface Ni(OH)2/NiOOH layers form that both participate in catalysis and passivate against corrosion, preserving the cyanide-linked framework beneath.
+- Synthetic feasibility and cost: Abundant, moderate cost; readily incorporated via room-temperature aqueous co-precipitation; widely used in PBA syntheses.
+- Structural features: Ni(II) in octahedral N-coordination with cyanide provides strong-field interactions that tune electronic structure for favorable adsorption and reaction kinetics.
+
+2) Iron (Fe) at the B-site (hexacyanoferrate)
+- Catalytic/electronic contribution: Fe(CN)6 units provide strong-field cyanide ligands that stabilize the lattice and modulate the A-site metal electronic structure, enabling synergistic charge transfer with Ni and Co. Mixed FeIII/FeII states can participate in electron buffering during UOR transients.
+- Stability and cost-effectiveness: Iron is abundant and low-cost; the hexacyanoferrate framework is well-established and robust when cyanide remains ligand-bound.
+- Environmental profile: Fe–cyanide coordination is strong; with proper synthesis and operation, free cyanide is minimized. Fe at the B-site is standard for environmentally benign PBAs relative to noble-metal alternatives.
+- Structural features: The Fe(CN)6 units define the open framework porosity and ion-accessible channels; careful control of vacancy content and hydration around Fe centers is key to durability.
+
+3) Cobalt (Co)
+- Catalytic activity: Co provides fast redox kinetics (Co2+/Co3+) and improves conductivity, accelerating UOR electron transfer. In mixed Ni–Co systems, Co often lowers activation barriers and increases site turnover.
+- Stability/corrosion resistance: CoOOH-like surface phases generated in alkaline potentials contribute both catalytic function and passivation, protecting the PBA interior under UOR bias.
+- Synthetic feasibility/cost: Abundant, moderate cost; readily co-precipitated with Ni, Mn, Zn; commonly used in PBA and oxide electrocatalysts.
+- Structural features: Co in N-coordination complements Ni by tuning local ligand-field strength and d-electron occupancy, broadening active-site diversity in a high-entropy matrix.
+
+4) Manganese (Mn)
+- Catalytic activity: Mn offers multivalence (Mn2+/Mn3+/Mn4+) and high-spin states that modulate adsorption energies of urea-derived intermediates and oxygen-containing species, often enhancing kinetics when synergizing with Ni/Co/Fe.
+- Stability: While Mn3+ can introduce Jahn–Teller distortions, high-entropy mixing disperses and suppresses such local distortions, contributing to quasi-zero-strain behavior and improved cycle stability seen in multi-metal PBAs.
+- Synthetic feasibility/cost/environment: Very abundant and low-cost; environmentally benign; co-precipitates well in aqueous systems.
+- Structural features: Mn broadens the distribution of local electronic environments, increasing the heterogeneity of active sites and enabling defect and microstrain tuning beneficial for UOR.
+
+5) Zinc (Zn)
+- Structural stabilization: Zn2+ is largely redox-inert under UOR conditions but acts as a lattice stabilizer that reduces [Fe(CN)6] vacancy formation, strengthens metal–ligand bonding networks, and suppresses dissolution in alkaline media. High-entropy studies indicate Zn contributes prominently to structural stability.
+- Corrosion resistance: Zn incorporation can increase the mechanical robustness of the framework and lower susceptibility to alkaline corrosion. Careful, sub-stoichiometric Zn fractions prevent detrimental interfacial redox phenomena reported for Zn-only PBAs in certain battery electrolytes.
+- Synthetic feasibility/cost/environment: Very low cost, earth-abundant, and environmentally benign; easily co-precipitated; helps meet sustainability constraints by avoiding noble/toxic metals.
+- Structural features: Zn’s closed-shell, redox-silent character in N-coordination stabilizes local lattice sites while maintaining porosity and ion transport pathways optimized by the other active metals.
+
+Why these five and what is avoided
+- Metals deliberately avoided: Noble metals (Ru, Ir, Pt) and heavy/toxic species (Cr, Cd, Hg) due to cost, supply risk, and environmental concerns. Cu can be highly active in related reactions; however, to balance UOR activity with long-term alkaline stability and minimize spontaneous interfacial redox observed in some Cu- or Zn-only PBAs, the proposed set prioritizes Ni/Co/Mn/Fe for activity with Zn for stabilizing structure without introducing additional interfacial reactivity.
+- Balance achieved: Ni and Fe deliver proven UOR synergy; Co and Mn amplify kinetics and broaden active-site diversity; Zn increases robustness and corrosion resistance. All are earth-abundant and compatible with scalable, aqueous syntheses.
+
+Mechanistic and structure–property considerations for UOR
+- Active-site diversity and mixed valence: High-entropy mixing produces a distribution of local ligand fields and d-electron configurations, enabling multiple catalytic microenvironments. This increases the probability of optimal binding energies for urea and intermediates while mitigating overbinding/poisoning.
+- Cyanide bridging and electronic tuning: Strong Fe–C≡N–M(N) bridges create rigid, electronically coupled networks that facilitate charge transport during UOR. Fe(CN)6 ligands stabilize A-site metal valence states; notably, Ni can remain as an active Ni(II) intermediate for prolonged periods, supporting durable activity before oxyhydroxide transformation.
+- Defect engineering: Controlling [Fe(CN)6] vacancies is crucial—too many vacancies degrade stability; fewer vacancies enhance conductivity and cycle life while maintaining sufficient open channels for reactant/product transport. Crystal water acts as a strain buffer and assists ion migration; a moderate hydration level is beneficial.
+- Corrosion resistance in alkaline KOH: Under UOR bias, thin surface oxyhydroxide layers (NiOOH, CoOOH) form that catalyze UOR and passivate the framework against cyanide ligand degradation. Zn’s presence further lowers dissolution propensity. High-entropy mixing reduces localized strain evolution, helping maintain the framework under long-term operation.
+
+Synthesis and processing routes
+- Scalable, green co-precipitation: Prepare an aqueous solution of mixed A-site metal salts (e.g., chlorides or nitrates of Ni2+, Co2+, Mn2+, Zn2+) with a mild chelating agent (citrate) to slow nucleation and reduce vacancy formation. Under vigorous stirring at room temperature, slowly add a stoichiometric or slight excess solution of K3[Fe(CN)6] to favor full B-site occupancy.
+- pH and ionic strength control: Maintain near-neutral to slightly acidic pH to form uniform particles; use background salts (KCl) to manage ionic strength and promote crystallinity. Aging at room temperature allows ordering and reduces defects.
+- Substrate growth and activation: In-situ growth on nickel foam via dip-coating/co-precipitation enhances adhesion, conductivity, and mechanical stability. Mild thermal aging (60–100 °C) and subsequent electrochemical activation in KOH/urea can generate protective oxyhydroxide surface layers without compromising the cyanide-linked core.
+- Vacancy/hydration tuning: Adjust citrate:metal ratio and total metal:hexacyanoferrate stoichiometry to minimize [Fe(CN)6] vacancies. Control drying conditions to retain beneficial crystal water. These steps are evidenced to increase stability and rate performance in PBA electrodes.
+- Optional benign coatings: Thin nitrogen-doped carbon or oxide shells deposited via low-temperature processes can further suppress dissolution while keeping mass transfer pathways open; use only if needed to meet stringent durability targets, as the base high-entropy framework should already provide enhanced stability.
+
+Environmental safety and cyanide management
+- Ligand stability: Hexacyanoferrate’s cyanide ligands are strongly bound; under typical alkaline UOR potentials and pH, cyanide release is minimal. Avoid extreme anodic potentials that can drive ligand degradation; maintain operation within the UOR window below vigorous OER.
+- Synthesis safety: Use aqueous media, avoid free cyanide excess, and ensure thorough washing to remove unbound cyanide species. Effluents should be treated to convert any trace cyanide to benign complexes if present.
+- Durability checks: Incorporate routine monitoring (e.g., cyanide test strips or ion chromatography of electrolytes) in long-duration tests to verify negligible leaching. High-entropy mixing and Zn stabilization reduce risk of framework breakdown that could release ligands.
+
+Cost, sustainability, and manufacturability
+- All selected metals (Ni, Co, Fe, Mn, Zn) are abundant and reasonably priced, meeting cost targets while avoiding scarce/toxic elements.
+- The synthesis is water-based, low-temperature, and scalable, with minimal waste. Co-precipitation is widely used for PBAs and has been demonstrated as eco-friendly.
+- The design leverages established PBA chemistry with defect and hydration control to meet durability and corrosion resistance requirements in concentrated KOH plus urea.
+
+Expected performance profile and optimization levers
+- Activity: The Ni–Fe center provides high intrinsic UOR activity in alkaline media; Co and Mn increase turnover via enhanced redox kinetics and adsorption tuning; the diverse high-entropy A-site environment broadens accessible active-site configurations.
+- Stability: Reduced vacancy content, Zn-aided lattice stabilization, and formation of protective oxyhydroxide layers yield robust durability under continuous operation. High-entropy effects suppress strain and phase changes, translating to long cycle life.
+- Optimization: Tune A-site ratios to balance activity and stability—e.g., Ni-rich compositions for activity (Ni 30–40%), Co/Mn as kinetic enhancers (each 15–25%), and Zn as stabilizer (10–20%). Empirically adjust vacancy/hydration via chelation and stoichiometry. Validate corrosion resistance by extended operation in 1 M KOH with 0.33 M urea, monitoring activity retention and any ligand leaching.
+
+Overall justification
+This five-metal high-entropy PBA—A-site Ni, Co, Mn, Zn with Fe at the hexacyanoferrate B-site—meets the multi-criteria design brief:
+- High activity from Ni–Fe synergy and Co/Mn-driven kinetics.
+- High stability from high-entropy lattice, minimized vacancies, Zn stabilization, and protective oxyhydroxide formation.
+- Low cost and environmental friendliness via earth-abundant metals and green synthesis.
+- Corrosion resistance in alkaline KOH derived from the robust cyanide-bridged framework and passivating surface layers.
+Published evidence across PBA electrocatalysis and battery studies supports each metal’s specific contribution: Ni(II) as a durable active intermediate in UOR; Fe(CN)6 providing strong-field lattice and electronic coupling; Co/Mn increasing redox kinetics and capacity/activity; Zn and Ni stabilizing multi-metal PBAs against strain and dissolution when vacancies are controlled.

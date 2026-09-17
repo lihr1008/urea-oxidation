@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "adjudication.schema.json",
+  "title": "EvidenceAudit adjudication record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "semantic_discount", "claim_decisions", "source_packet_decisions"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "semantic_discount": {"type": "number", "minimum": 0, "maximum": 1},
+    "auditor_only_source_packets": {"type": "integer", "minimum": 0},
+    "claim_decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["claim_id", "decision"],
+        "properties": {
+          "claim_id": {"type": "string", "minLength": 1},
+          "decision": {"enum": ["include", "exclude", "revise"]},
+          "design_dimension": {"type": "string"},
+          "reason": {"type": "string"}
+        }
+      }
+    },
+    "source_packet_decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["record_id", "source_packet_id", "decision"],
+        "properties": {
+          "record_id": {"type": "string", "minLength": 1},
+          "source_packet_id": {"type": "string", "minLength": 1},
+          "decision": {"enum": ["accepted", "machine_unreviewed", "revised", "rejected"]},
+          "reason": {"type": "string"}
+        }
+      }
+    },
+    "review_coverage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["category", "population", "reviewed"],
+        "properties": {
+          "category": {"type": "string"},
+          "population": {"type": "integer", "minimum": 0},
+          "reviewed": {"type": "integer", "minimum": 0}
+        }
+      }
+    }
+  }
+}

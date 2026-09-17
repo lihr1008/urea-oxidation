@@ -1,0 +1,61 @@
+{
+  "run_id": "uq_reference",
+  "uncertainty_source": "result/uncertainty_table.xlsx",
+  "benchmark": {
+    "threshold_V": 1.424,
+    "source": "candidate_benchmark_E10_V",
+    "high_potential_criterion": "PI95_lower < candidate_benchmark_E10_V"
+  },
+  "rows": 40,
+  "global_prediction_top_count": 10,
+  "uncertainty_guided_count": 30,
+  "zone_counts": {
+    "Z4": 18,
+    "Z2": 10,
+    "Z1": 6,
+    "Z3": 6
+  },
+  "selection_stage_counts": {
+    "zone_diversity": 23,
+    "global_top10": 10,
+    "zone_top": 7
+  },
+  "zone_diagnostics": [
+    {
+      "zone": "Z4",
+      "zone_total_count": 21321,
+      "formal_PI_eligible_count": 13822,
+      "top_selected_count": 0,
+      "diversity_selected_count": 8
+    },
+    {
+      "zone": "Z2",
+      "zone_total_count": 117592,
+      "formal_PI_eligible_count": 51117,
+      "top_selected_count": 3,
+      "diversity_selected_count": 7
+    },
+    {
+      "zone": "Z1",
+      "zone_total_count": 400112,
+      "formal_PI_eligible_count": 221175,
+      "top_selected_count": 2,
+      "diversity_selected_count": 4
+    },
+    {
+      "zone": "Z3",
+      "zone_total_count": 14264,
+      "formal_PI_eligible_count": 8813,
+      "top_selected_count": 2,
+      "diversity_selected_count": 4
+    }
+  ],
+  "selection_channels": {
+    "global_top10": "10 lowest predicted_potential values among untested grid points; no PI95 gate",
+    "uncertainty_guided_30": "PI95_lower < candidate_benchmark_E10_V, followed by zone quotas and ILR diversity"
+  },
+  "global_rank_definition": "rank of PI95_lower among all grid points",
+  "zone_rank_definition": "rank of PI95_lower within the same Zone",
+  "global_prediction_rank_definition": "rank of predicted_potential among untested grid points",
+  "scoring_formula": "score = 0.55 * ILR_distance_score + 0.45 * optimistic_PI95_lower_score"
+}

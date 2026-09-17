@@ -1,0 +1,34 @@
+{
+  "accepted_auditor_packets": 114,
+  "auditor_only_source_packets": 108,
+  "frozen_claim_count": 498,
+  "frozen_evidence_count": 2141,
+  "pending_actions": 0,
+  "ready_for_fusion": true,
+  "rejected_packets": 0,
+  "review_coverage": [
+    {
+      "category": "mandatory_risk_packet",
+      "population": 108,
+      "reviewed": 108
+    },
+    {
+      "category": "stratified_low_risk_packet",
+      "population": 109,
+      "reviewed": 6
+    },
+    {
+      "category": "unrelated_mapping_spotcheck",
+      "population": 635,
+      "reviewed": 6
+    },
+    {
+      "category": "machine_unreviewed_extension",
+      "population": 5,
+      "reviewed": 0
+    }
+  ],
+  "revised_packets": 0,
+  "schema_version": "1.0.0",
+  "semantic_discount_for_unreviewed_sources": 0.9674014658411585
+}

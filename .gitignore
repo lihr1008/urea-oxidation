@@ -1,0 +1,37 @@
+# Local uncertainty-model artifacts
+MachineLearning/Theory-experiment_hybrid_model/NN/uncertainty/model_load/
+
+# Local experiment-only model artifacts
+MachineLearning/Experiment-only_model/NN/model_load/
+
+# Local alternative-regression model artifacts
+MachineLearning/Theory-experiment_hybrid_model/DT/*.pkl
+MachineLearning/Theory-experiment_hybrid_model/DT/*.pckl
+MachineLearning/Theory-experiment_hybrid_model/KNN/*.pkl
+MachineLearning/Theory-experiment_hybrid_model/KNN/*.pckl
+MachineLearning/Theory-experiment_hybrid_model/RF/*.pkl
+MachineLearning/Theory-experiment_hybrid_model/RF/*.pckl
+MachineLearning/Theory-experiment_hybrid_model/SVR/*.pkl
+MachineLearning/Theory-experiment_hybrid_model/SVR/*.pckl
+MachineLearning/Theory-experiment_hybrid_model/XGBoost/*.pkl
+MachineLearning/Theory-experiment_hybrid_model/XGBoost/*.pckl
+
+# Local hybrid-NN model artifacts
+MachineLearning/Theory-experiment_hybrid_model/NN/predict/model_load/
+MachineLearning/Theory-experiment_hybrid_model/NN/predict/results/*.pth
+MachineLearning/Theory-experiment_hybrid_model/NN/predict/results/*.pkl
+MachineLearning/Theory-experiment_hybrid_model/NN/predict/results/*.pckl
+MachineLearning/Theory-experiment_hybrid_model/NN/predict/code/checkpoint.pth
+
+# Full-grid uncertainty outputs kept outside GitHub
+MachineLearning/Theory-experiment_hybrid_model/NN/uncertainty/result/grid_cv_seed_predictions.*
+MachineLearning/Theory-experiment_hybrid_model/NN/uncertainty/result/uncertainty_table.xlsx
+MachineLearning/Theory-experiment_hybrid_model/NN/uncertainty/result/reliability_2x4_plot_data.xlsx
+MachineLearning/Theory-experiment_hybrid_model/NN/uncertainty/result/grid_uncertainty_overview.xlsx
+MachineLearning/Theory-experiment_hybrid_model/NN/uncertainty/result/applicability_domain_grid.xlsx
+MachineLearning/Theory-experiment_hybrid_model/NN/uncertainty/result/grid_cv_seed_summary.xlsx
+MachineLearning/Theory-experiment_hybrid_model/NN/uncertainty/result/cv_seed_model_manifest.xlsx
+
+# Python caches
+__pycache__/
+*.py[cod]

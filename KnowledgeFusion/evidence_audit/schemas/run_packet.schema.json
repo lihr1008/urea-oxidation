@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "run_packet.schema.json",
+  "title": "EvidenceAudit run packet",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["record_id", "candidate", "final_answer", "source_packets"],
+  "properties": {
+    "record_id": {"type": "string", "minLength": 1},
+    "candidate": {"type": "string", "minLength": 1},
+    "final_answer": {"type": "string", "minLength": 1},
+    "allowed_functional_roles": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "allowed_design_dimensions": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "source_packets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": ["source_packet_id", "evidence_text"],
+        "properties": {
+          "source_packet_id": {"type": "string", "minLength": 1},
+          "evidence_text": {"type": "string", "minLength": 1},
+          "DOI": {"type": "string"},
+          "UT": {"type": "string"},
+          "publication_year": {"type": ["string", "integer"]},
+          "study_year": {"type": ["string", "integer"]},
+          "independent_source_id": {"type": "string"},
+          "independence_group": {"type": "string"}
+        }
+      }
+    }
+  }
+}

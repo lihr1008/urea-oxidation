@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mapping_response.schema.json",
+  "title": "Same-run claim-source mapping response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["request_id", "request_hash", "prompt_id", "prompt_sha256", "protocol_version", "review_model", "review_date", "mappings"],
+  "properties": {
+    "request_id": {"type": "string"},
+    "request_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "prompt_id": {"type": "string"},
+    "prompt_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "protocol_version": {"const": "7.0.0"},
+    "review_model": {"type": "string", "minLength": 1},
+    "review_date": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+    "mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["claim_id", "mapping_status", "mapping_excerpt", "mapping_reason"],
+        "properties": {
+          "claim_id": {"type": "string", "minLength": 1},
+          "mapping_status": {"enum": ["related", "possibly_related", "unrelated"]},
+          "mapping_excerpt": {"type": "string"},
+          "mapping_reason": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  }
+}

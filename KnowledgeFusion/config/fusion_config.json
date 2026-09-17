@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "protocol_version": "7.3.0",
+  "models": ["deepseek", "gemini", "gpt", "qwen"],
+  "repeats_per_model": 10,
+  "critical_dimensions": ["uor_activity", "pba_structural_compatibility", "wet_chemical_synthesis", "alkaline_stability_corrosion"],
+  "source_profiles": {
+    "strong_discount": {"direct_experimental": 0.9, "direct_computational": 0.7, "single_domain_experimental": 0.45, "substitution_adjacent": 0.25, "foundational_review": 0.1},
+    "nominal": {"direct_experimental": 0.9, "direct_computational": 0.75, "single_domain_experimental": 0.6, "substitution_adjacent": 0.5, "foundational_review": 0.35},
+    "weak_discount": {"direct_experimental": 0.9, "direct_computational": 0.82, "single_domain_experimental": 0.72, "substitution_adjacent": 0.62, "foundational_review": 0.5}
+  },
+  "traceability_profiles": {
+    "strong_discount": {"exact_chunk_DOI_UT": 1.0, "abstract_DOI_UT": 0.65, "identified_record": 0.3, "partition_only": 0.1, "untraceable": 0.0},
+    "nominal": {"exact_chunk_DOI_UT": 1.0, "abstract_DOI_UT": 0.8, "identified_record": 0.5, "partition_only": 0.25, "untraceable": 0.0},
+    "weak_discount": {"exact_chunk_DOI_UT": 1.0, "abstract_DOI_UT": 0.9, "identified_record": 0.7, "partition_only": 0.4, "untraceable": 0.0}
+  },
+  "entailment_profiles": {
+    "strong_discount": {"full": 1.0, "partial": 0.45, "contextual": 0.2, "overreach": 0.05, "none": 0.0},
+    "nominal": {"full": 1.0, "partial": 0.6, "contextual": 0.35, "overreach": 0.15, "none": 0.0},
+    "weak_discount": {"full": 1.0, "partial": 0.75, "contextual": 0.5, "overreach": 0.25, "none": 0.0}
+  },
+  "gate_profiles": {
+    "strict": {"dimension_support": 0.65, "dimension_oppose": 0.55, "maximum_ignorance_for_support": 0.35, "high_conflict": 0.25},
+    "nominal": {"dimension_support": 0.6, "dimension_oppose": 0.6, "maximum_ignorance_for_support": 0.4, "high_conflict": 0.35},
+    "lenient": {"dimension_support": 0.55, "dimension_oppose": 0.65, "maximum_ignorance_for_support": 0.45, "high_conflict": 0.45}
+  },
+  "sensitivity_scenarios": [
+    {"scenario_id": "nominal", "source_profile": "nominal", "traceability_profile": "nominal", "entailment_profile": "nominal", "gate_profile": "nominal"},
+    {"scenario_id": "source_strong_discount", "source_profile": "strong_discount", "traceability_profile": "nominal", "entailment_profile": "nominal", "gate_profile": "nominal"},
+    {"scenario_id": "source_weak_discount", "source_profile": "weak_discount", "traceability_profile": "nominal", "entailment_profile": "nominal", "gate_profile": "nominal"},
+    {"scenario_id": "traceability_strong_discount", "source_profile": "nominal", "traceability_profile": "strong_discount", "entailment_profile": "nominal", "gate_profile": "nominal"},
+    {"scenario_id": "traceability_weak_discount", "source_profile": "nominal", "traceability_profile": "weak_discount", "entailment_profile": "nominal", "gate_profile": "nominal"},
+    {"scenario_id": "entailment_strong_discount", "source_profile": "nominal", "traceability_profile": "nominal", "entailment_profile": "strong_discount", "gate_profile": "nominal"},
+    {"scenario_id": "entailment_weak_discount", "source_profile": "nominal", "traceability_profile": "nominal", "entailment_profile": "weak_discount", "gate_profile": "nominal"},
+    {"scenario_id": "gate_strict", "source_profile": "nominal", "traceability_profile": "nominal", "entailment_profile": "nominal", "gate_profile": "strict"},
+    {"scenario_id": "gate_lenient", "source_profile": "nominal", "traceability_profile": "nominal", "entailment_profile": "nominal", "gate_profile": "lenient"},
+    {"scenario_id": "all_strict", "source_profile": "strong_discount", "traceability_profile": "strong_discount", "entailment_profile": "strong_discount", "gate_profile": "strict"},
+    {"scenario_id": "all_lenient", "source_profile": "weak_discount", "traceability_profile": "weak_discount", "entailment_profile": "weak_discount", "gate_profile": "lenient"}
+  ],
+  "primary_combination_rule": "yager",
+  "secondary_combination_rule": "dempster",
+  "reference_expectations": {
+    "assisted_run_count": 40,
+    "nominal_dimension_count": 160,
+    "scenario_count": 11,
+    "candidate_count": 5,
+    "priority_candidate": "Fe-Co-Ni-Mn-Zn",
+    "priority_generation_count": 27,
+    "priority_supported_run_count": 3
+  }
+}

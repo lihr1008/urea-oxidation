@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "atomization_response.schema.json",
+  "title": "Context-aware atomization response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["request_id", "request_hash", "prompt_id", "prompt_sha256", "protocol_version", "review_model", "review_date", "claims"],
+  "properties": {
+    "request_id": {"type": "string"},
+    "request_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "prompt_id": {"type": "string"},
+    "prompt_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "protocol_version": {"const": "7.0.0"},
+    "review_model": {"type": "string", "minLength": 1},
+    "review_date": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["governing_heading_excerpt", "context_excerpt", "claim_excerpt", "self_contained_claim", "subject", "object", "element_or_relation", "functional_role", "design_dimension", "claim_scope", "claim_status", "atomization_reason"],
+        "properties": {
+          "governing_heading_excerpt": {"type": "string", "minLength": 1},
+          "context_excerpt": {"type": "string", "minLength": 1},
+          "claim_excerpt": {"type": "string", "minLength": 1},
+          "self_contained_claim": {"type": "string", "minLength": 1},
+          "subject": {"type": "string", "minLength": 1},
+          "object": {"type": "string", "minLength": 1},
+          "element_or_relation": {"type": "string", "minLength": 1},
+          "functional_role": {"type": "string", "minLength": 1},
+          "design_dimension": {"type": "string", "minLength": 1},
+          "claim_scope": {"type": "string", "minLength": 1},
+          "claim_status": {"type": "string", "minLength": 1},
+          "atomization_reason": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  }
+}

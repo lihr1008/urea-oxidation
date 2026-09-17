@@ -1,0 +1,25 @@
+{
+  "auditor_only_source_packets": 1,
+  "claim_decisions": [
+    {
+      "claim_id": "claim_18b09d442f3a4351",
+      "decision": "include"
+    }
+  ],
+  "review_coverage": [
+    {
+      "category": "synthetic_example",
+      "population": 1,
+      "reviewed": 1
+    }
+  ],
+  "schema_version": "1.0.0",
+  "semantic_discount": 0.9674014658411585,
+  "source_packet_decisions": [
+    {
+      "decision": "accepted",
+      "record_id": "run_demo_001",
+      "source_packet_id": "source_demo_001"
+    }
+  ]
+}

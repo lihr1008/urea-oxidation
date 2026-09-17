@@ -1,0 +1,25 @@
+{
+  "all_hashes_match": true,
+  "assisted_output_count": 40,
+  "control_output_count": 40,
+  "corpus_hash_mode": "UTF-8 text with CRLF and CR normalized to LF",
+  "corpus_partition_count": 10,
+  "frozen_input_count": 4,
+  "manifest_sha256": "af3542173a0a437897a537b96e2a57bae6432797b0b6b45dc9f5ece846e67d27",
+  "model_distribution": {
+    "with_deepsearcher": {
+      "deepseek": 10,
+      "gemini": 10,
+      "gpt": 10,
+      "qwen": 10
+    },
+    "without_deepsearcher": {
+      "deepseek": 10,
+      "gemini": 10,
+      "gpt": 10,
+      "qwen": 10
+    }
+  },
+  "no_fallback_used": true,
+  "status": "verified"
+}

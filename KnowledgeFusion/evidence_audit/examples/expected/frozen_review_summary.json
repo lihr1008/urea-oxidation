@@ -1,0 +1,19 @@
+{
+  "accepted_auditor_packets": 1,
+  "auditor_only_source_packets": 1,
+  "frozen_claim_count": 1,
+  "frozen_evidence_count": 1,
+  "pending_actions": 0,
+  "ready_for_fusion": true,
+  "rejected_packets": 0,
+  "review_coverage": [
+    {
+      "category": "synthetic_example",
+      "population": 1,
+      "reviewed": 1
+    }
+  ],
+  "revised_packets": 0,
+  "schema_version": "1.0.0",
+  "semantic_discount_for_unreviewed_sources": 0.9674014658411585
+}
